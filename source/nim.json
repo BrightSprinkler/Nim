@@ -1,0 +1,3674 @@
+{
+  "pages": {
+    "settings": [
+      {
+        "image": {
+          "locator": "file:settings.jpg"
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Game Length",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings-game-length"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Hentai",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings-hentai"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "CBT",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings-cbt"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Only CBT",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings-only-cbt"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Difficulty",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings-difficulty"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Auto Play",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings-auto-play-1"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Back To Menu",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "menu"
+                  }
+                }
+              ],
+              "color": "#1b5e20"
+            }
+          ]
+        }
+      }
+    ],
+    "disclaimer": [
+      {
+        "image": {
+          "locator": "file:disclaimer.jpg"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>I do not own any of the images or fonts that are used to create this tease.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>You may only use this tease for personal use. </p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>None of the items in this tease can be sold or redistributed for money.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>If you are a copyright holder of any of the used resources and want them removed, feel free to contact me.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Every character is 18 years old or older.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>This is a work of fiction. </p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Names, characters, businesses, places, events and incidents are either the products of the author’s imagination or used in a fictitious manner.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Always consider your own safety first.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p> If the tease asks you to do anything you feel is unsafe or could threaten your health, don&#39;t do it.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Ensure your wellbeing is paramount at all times.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Back To Menu",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "menu"
+                  }
+                }
+              ],
+              "color": "#1b5e20"
+            }
+          ]
+        }
+      }
+    ],
+    "start": [
+      {
+        "image": {
+          "locator": "file:nim-0.jpg"
+        }
+      },
+      {
+        "goto": {
+          "target": "menu"
+        }
+      }
+    ],
+    "start-warmup": [],
+    "settings-game-length": [
+      {
+        "image": {
+          "locator": "file:settings-game-length.jpg"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Game Length</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>By default the match count is 15.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>More matches increase the games duration.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.gameLength === 0",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Normal (15 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Medium (30 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Long (45 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.gameLength === 1",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Normal (15 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium (30 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Long (45 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.gameLength === 2",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Normal (15 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium (30 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Long (45 Matches)",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.gameLength = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-game-length"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "settings-hentai": [
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "file:settings-hentai-enabled.jpg"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "file:settings-hentai-disabled.jpg"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Hentai</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Disable hentai to use real 3D humans.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.hentaiEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-hentai"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.hentaiEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-hentai"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "!settings.hentaiEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.hentaiEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-hentai"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.hentaiEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-hentai"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "settings-cbt": [
+      {
+        "if": {
+          "condition": "settings.cbtEnabled",
+          "commands": [
+            {
+              "if": {
+                "condition": "settings.hentaiEnabled",
+                "commands": [
+                  {
+                    "image": {
+                      "locator": "file:settings-hentai-cbt-enabled.jpg"
+                    }
+                  }
+                ],
+                "elseCommands": [
+                  {
+                    "image": {
+                      "locator": "file:settings-hentai-normal-cbt-enabled.jpg"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "if": {
+                "condition": "settings.hentaiEnabled",
+                "commands": [
+                  {
+                    "image": {
+                      "locator": "file:settings-hentai-cbt-disabled.jpg"
+                    }
+                  }
+                ],
+                "elseCommands": [
+                  {
+                    "image": {
+                      "locator": "file:settings-hentai-normal-cbt-disabled.jpg"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>CBT</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Enable or disable tasks related to cbt.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.cbtEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.cbtEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-cbt"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.cbtEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-cbt"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "!settings.cbtEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.cbtEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-cbt"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.cbtEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-cbt"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "settings-only-cbt": [
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "file:settings-hentai-cbt-enabled.jpg"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "file:settings-hentai-normal-cbt-enabled.jpg"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Only CBT</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>When enabled only cbt related tasks are used.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>This setting only works if cbt is enabled as well.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.onlyCbtEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.onlyCbtEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-only-cbt"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.onlyCbtEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-only-cbt"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "!settings.onlyCbtEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.onlyCbtEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-only-cbt"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.onlyCbtEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-only-cbt"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "settings-difficulty": [
+      {
+        "image": {
+          "locator": "file:settings-difficulty.jpg"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Difficulty</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>The difficulty of a game is determined by the AI-level.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.difficulty === 0",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.difficulty === 1",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.difficulty === 2",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.difficulty === 3",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.difficulty === 4",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.difficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-difficulty"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "settings-auto-play-1": [
+      {
+        "image": {
+          "locator": "file:settings-auto-play.jpg"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Auto Play</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Enabling auto play replaces the players manual decision with an automatic AI decision.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>This enables the tease to be played &quot;Hands Free&quot;.</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Auto Play Difficulty",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "!settings.autoPlayEnabled",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Enabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayEnabled = true;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Disabled",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayEnabled = false;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Auto Play Difficulty",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "settings-auto-play-2": [
+      {
+        "image": {
+          "locator": "file:settings-difficulty.jpg"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Auto Play</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayDifficulty === 0",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Auto Play",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayDifficulty === 1",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Auto Play",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayDifficulty === 2",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Auto Play",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayDifficulty === 3",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Back To Auto Play",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayDifficulty === 4",
+          "commands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Very Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 0;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Easy",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 1;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Medium",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 2;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 3;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Very Hard",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "eval": {
+                          "script": "settings.autoPlayDifficulty = 4;"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-2"
+                        }
+                      }
+                    ],
+                    "color": "#01579b"
+                  },
+                  {
+                    "label": "Back To Auto Play",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings-auto-play-1"
+                        }
+                      }
+                    ],
+                    "color": "#33691e"
+                  },
+                  {
+                    "label": "Back To Settings",
+                    "commands": [
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "goto": {
+                          "target": "settings"
+                        }
+                      }
+                    ],
+                    "color": "#1b5e20"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "menu": [
+      {
+        "image": {
+          "locator": "file:title.jpg"
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Start",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "start-warmup"
+                  }
+                }
+              ],
+              "color": "#ff5722"
+            },
+            {
+              "label": "Settings",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "settings"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Disclaimer",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "disclaimer"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "modules": {
+    "audio": {}
+  },
+  "files": {
+    "menu-button-click.mp3": {
+      "id": 1646051,
+      "hash": "75dce5d44cffd24e82b7fef3f2d36c210e4da965",
+      "size": 2242,
+      "type": "audio/mpeg"
+    },
+    "nim-0.jpg": {
+      "id": 1646260,
+      "hash": "cc3214300d2ac37ee97d43abf5aa4cd06016753a",
+      "size": 60178,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-1.jpg": {
+      "id": 1646261,
+      "hash": "e4f88f1d8bfec938b99966fa5dab642331d0aa28",
+      "size": 63384,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-2.jpg": {
+      "id": 1646262,
+      "hash": "90eb14d7d0ac9850bd8d16b19800b6d6141e767e",
+      "size": 66768,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-3.jpg": {
+      "id": 1646263,
+      "hash": "198bcec3461e61497b0bead5453f181dab5ef274",
+      "size": 70390,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-4.jpg": {
+      "id": 1646264,
+      "hash": "2f78ee803335cc3c5c9c2e8b10f47d112daa8102",
+      "size": 73910,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-5.jpg": {
+      "id": 1646265,
+      "hash": "bb33f722f8f8fc765d54d11ad58c9e0131e0dd19",
+      "size": 77463,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-6.jpg": {
+      "id": 1646266,
+      "hash": "579c1cc195c736f4556265bb90bfacd0597fadd7",
+      "size": 80698,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-7.jpg": {
+      "id": 1646267,
+      "hash": "06a9a3ac5d68da07b09267cef321fab47fa43f30",
+      "size": 84182,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-8.jpg": {
+      "id": 1646268,
+      "hash": "297790f6d24f7e4692840d8baa2be57c18224f4e",
+      "size": 87894,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-9.jpg": {
+      "id": 1646269,
+      "hash": "b353d22d4f2f5f71b476b430e360b93df8958c86",
+      "size": 91512,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-10.jpg": {
+      "id": 1646270,
+      "hash": "d8e85a23961f6a76c987cbd3f71ac8096f7d43a2",
+      "size": 95135,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-11.jpg": {
+      "id": 1646271,
+      "hash": "6901cd3e78ff473759ddda60657a269087cd0eb9",
+      "size": 98306,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-12.jpg": {
+      "id": 1646272,
+      "hash": "43c8e12bb3381cb0b05b0872d7934e07219044b5",
+      "size": 101742,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-13.jpg": {
+      "id": 1646273,
+      "hash": "c673f1b3bcfdb6b637850b528bb144f4fc2e0a49",
+      "size": 105318,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-14.jpg": {
+      "id": 1646274,
+      "hash": "94b37da125d771f92abad62f9e6ec78ef6177763",
+      "size": 108959,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "nim-15.jpg": {
+      "id": 1646275,
+      "hash": "b7e21c6bf40c5d23beb839d1b365c10e5d35f133",
+      "size": 112461,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-game-length.jpg": {
+      "id": 1646276,
+      "hash": "922fc5db6489abfc3bbf82aa544ee008ad4185e8",
+      "size": 166429,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings.jpg": {
+      "id": 1646277,
+      "hash": "f261eeffdbf40a89ddfc24616f45fe33e2816768",
+      "size": 145161,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-disabled.jpg": {
+      "id": 1646376,
+      "hash": "647ca5b6ba7812ae0abfa40453767dcce5edf0ad",
+      "size": 385862,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-enabled.jpg": {
+      "id": 1646377,
+      "hash": "366e1b682c0f246cdd4c92983c3ffe8d10250a56",
+      "size": 411426,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-cbt-disabled.jpg": {
+      "id": 1646407,
+      "hash": "e6f526f423c11e0448e70acfa9da32b0db0062b2",
+      "size": 130360,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-cbt-enabled.jpg": {
+      "id": 1646408,
+      "hash": "b5c3f59a7e7395ddc9521689f523e62348ee7696",
+      "size": 137006,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-normal-cbt-disabled.jpg": {
+      "id": 1646409,
+      "hash": "0973e2ae43b7fa4825a05dde36a8aa88de0e1368",
+      "size": 207400,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-normal-cbt-enabled.jpg": {
+      "id": 1646410,
+      "hash": "9ab07ae6da6d0b16969db3bc6f8948078fbc4e9d",
+      "size": 208951,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-difficulty.jpg": {
+      "id": 1646411,
+      "hash": "6c81a2ea5a35c359d801a3d25a14d02dedf4daba",
+      "size": 136446,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-auto-play.jpg": {
+      "id": 1646412,
+      "hash": "4028956e5e3149acfc2b8bcb8769f250676b7374",
+      "size": 90506,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "title.jpg": {
+      "id": 1646413,
+      "hash": "b5cb86e7a6a055f3b9b6a57b469f295e011cd828",
+      "size": 123276,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "disclaimer.jpg": {
+      "id": 1646417,
+      "hash": "b40c42cb62c92e5f3d292eb69517fc07d534da3f",
+      "size": 482321,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    }
+  },
+  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: true,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 5 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n",
+  "galleries": {},
+  "editor": {
+    "recentImages": []
+  }
+}

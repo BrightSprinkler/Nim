@@ -35,7 +35,7 @@ The last options seems the most fun and interactive.
 
 The following settings can be modified by the player.
 
-### Match Count
+### Game Length
 
 By default the count of matches per game is 15.
 The player can decide to increase the match count to a multiple of 15.
@@ -44,7 +44,7 @@ Theoretically any amount of matches is possible, however I want to animate the w
 
 ### Hentai
 
-By default hentai will be to go to visuals.
+By default hentai will be the go to visuals.
 This can be toggeld off to use real 3d humans.
 
 ### CBT
@@ -66,26 +66,26 @@ The 15 base tasks will not be used - only the 15 cbt tasks remain.
 
 The difficulty of winning a game is determined by the AI.
 
-#### Very Easy
+#### Very Easy (0)
 
 100% of the picks the AI takes matches by random.
 
-#### Easy
+#### Easy (1)
 
 75% of the picks the AI takes matches by random.
 25% of the picks the AI takes matches by the "Very Hard"-Alogrithm.
 
-#### Medium
+#### Medium (2)
 
 50% of the picks the AI takes matches by random.
 50% of the picks the AI takes matches by the "Very Hard"-Alogrithm.
 
-#### Hard
+#### Hard (3)
 
 25% of the picks the AI takes matches by random.
 75% of the picks the AI takes matches by the "Very Hard"-Alogrithm.
 
-#### Very Hard
+#### Very Hard (4)
 
 The AI picks the amount of matches to take away using modulo 4.
 Once you fuck up or don't start the game it is probably over for the player.
@@ -94,13 +94,55 @@ Once you fuck up or don't start the game it is probably over for the player.
 
 By default the player will deceide the count of matches to take away each round.
 
-Enabling auto play replaces the players manuall decision with an automatic AI decision.
+Enabling auto play replaces the players manual decision with an automatic AI decision.
 For this decision a difficulty level can be picked as well.
 Basically 2 AIs are playing against each other and the game can be played in a "Hands Free"-Mode.
 
 ## Tasks
+Mingames:
+- RL GL
+- Dice
+- Coin flip
+- Split
+-- A number between X and Y, X is action one and Y is action two, e.g. X edges, need to be hold for Y seconds 
+- Fap routlett
 
+Variation:
+- Bpm
+-- different speed
+-- Overdrive
+-- different patterns
+- pressure
+-- light/barely touching
+-- normal
+-- hard/thight
+
+- Area
+-- full cock
+-- shaft
+-- head
+-- frenulum
+
+-- balls
+-- left ball
+-- right ball
+-- head
+
+Techniques:
+- Palming
+- Stroking
+- Reverse Hand
+- Twisting
+
+- slapping
+- punching
+- squeezing
+
+Edging
 ### Intro
+
+- explanation
+- warmup (can be skipped)
 
 ### Denial
 
@@ -201,3 +243,20 @@ Basically 2 AIs are playing against each other and the game can be played in a "
 ##### CBT
 
 ## Character
+
+### Hentai
+
+### Normal
+
+## Sources
+
+* https://www.freepngimg.com/png/58348-alarm-icon-cartoon-timer-clock-free-photo-png
+* https://openclipart.org/detail/35431/tango-preferences-system
+* https://www.reddit.com/r/codegeassnsfw/top/?t=all
+* https://rule34.paheal.net/post/list/C%5EdC%5Ed/1
+* https://www.reddit.com/r/BigAnimeTiddies/comments/rk7opd/koyanskaya_fatego/
+* https://www.reddit.com/r/BikiniBodies/comments/f1ccpt/showing_a_little_underboob/
+* https://www.reddit.com/r/ballbustinghentai/comments/mpv1wr/such_a_great_technique/
+* https://www.reddit.com/r/BallBusting/comments/qnlotf/my_stress_balls/
+* https://www.onlinelabels.com/clip-art/Brain-Light-Bulb-By-Elisa-Riva-125054
+* https://www.onlinelabels.com/clip-art/Hand-Silhouette-123714
