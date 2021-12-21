@@ -10,7 +10,7 @@
         "choice": {
           "options": [
             {
-              "label": "Game Length",
+              "label": "Game Length ⏰",
               "commands": [
                 {
                   "audio.play": {
@@ -31,7 +31,7 @@
               ]
             },
             {
-              "label": "Hentai",
+              "label": "Hentai 👯",
               "commands": [
                 {
                   "audio.play": {
@@ -52,7 +52,7 @@
               ]
             },
             {
-              "label": "CBT",
+              "label": "CBT 💢",
               "commands": [
                 {
                   "audio.play": {
@@ -73,7 +73,7 @@
               ]
             },
             {
-              "label": "Only CBT",
+              "label": "Only CBT 💥",
               "commands": [
                 {
                   "audio.play": {
@@ -94,7 +94,7 @@
               ]
             },
             {
-              "label": "Difficulty",
+              "label": "Difficulty 🎚",
               "commands": [
                 {
                   "audio.play": {
@@ -115,7 +115,7 @@
               ]
             },
             {
-              "label": "Auto Play",
+              "label": "Auto Play 🔁",
               "commands": [
                 {
                   "audio.play": {
@@ -285,7 +285,13 @@
         }
       }
     ],
-    "start-warmup": [],
+    "start-warmup": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
     "settings-game-length": [
       {
         "image": {
@@ -693,7 +699,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -720,7 +726,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -781,7 +787,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -807,7 +813,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -930,7 +936,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -957,7 +963,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -1018,7 +1024,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1044,7 +1050,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -1145,7 +1151,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1172,7 +1178,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -1233,7 +1239,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1259,7 +1265,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -2195,7 +2201,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -2221,7 +2227,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -2246,7 +2252,7 @@
                     ]
                   },
                   {
-                    "label": "Auto Play Difficulty",
+                    "label": "Auto Play Difficulty 🎚",
                     "commands": [
                       {
                         "audio.play": {
@@ -2301,7 +2307,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -2326,7 +2332,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -2352,7 +2358,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Auto Play Difficulty",
+                    "label": "Auto Play Difficulty 🎚",
                     "commands": [
                       {
                         "audio.play": {
@@ -3377,6 +3383,11 @@
                   }
                 },
                 {
+                  "eval": {
+                    "script": "game.currentSet = settings.gameLength;\r\n\r\nswitch(settings.gameLength)  {\r\n  case 0:\r\n    game.maxMatches = 15;\r\n    break;\r\n  case 1:\r\n    game.maxMatches = 30;\r\n    break;\r\n  case 2:\r\n    game.maxMatches = 45;\r\n    break;\r\n}\r\n\r\ngame.currentMatches = game.maxMatches;\r\ngame.lastMatches = game.maxMatches;\r\n\r\n"
+                  }
+                },
+                {
                   "goto": {
                     "target": "start-warmup"
                   }
@@ -3425,6 +3436,484 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      }
+    ],
+    "slideShow": [
+      {
+        "eval": {
+          "script": "console.warn(\"slideShow\", slideShow);"
+        }
+      },
+      {
+        "if": {
+          "condition": "slideShow.imagePageStack.length === 0",
+          "commands": [
+            {
+              "goto": {
+                "target": "handleTurn"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3"
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "eval": {
+                "script": "slideShow.running = true;\r\npages.goto(slideShow.imagePageStack.shift());"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "handleTurn": [
+      {
+        "eval": {
+          "script": "pages.goto(\"nim-task-\" + game.getCurrentSetCurrentMatches());"
+        }
+      }
+    ],
+    "newTurn": [
+      {
+        "timer": {
+          "duration": "1s",
+          "style": "hidden"
+        }
+      },
+      {
+        "eval": {
+          "script": "// displayes the current match count\r\nconsole.warn(\"newTurn current matches\", game.currentMatches);\r\n\r\nslideShow.imagePageStack.push(\"nim-image-\"+ game.getCurrentSetCurrentMatches());\r\n\r\nif (slideShow.imagePageStack.length > 0) {\r\n  var page = slideShow.imagePageStack.pop();\r\n  console.warn(\"newTurn\", \"going to \" + page)\r\n  slideShow.running = false;\r\n  pages.goto(page);\r\n}\r\n"
+        }
+      },
+      {
+        "goto": {
+          "target": "performTurn"
+        }
+      }
+    ],
+    "performTurn": [
+      {
+        "say": {
+          "label": "<p>Remaining Matches: <eval>game.currentMatches</eval></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "game.isPlayerTurn",
+          "commands": [
+            {
+              "if": {
+                "condition": "settings.autoPlayEnabled",
+                "commands": [
+                  {
+                    "eval": {
+                      "script": "console.warn(\"performTurn\", \"automatic player turn\");\r\ngame.handleTurn(ai.performPlayerTurn());"
+                    }
+                  }
+                ],
+                "elseCommands": [
+                  {
+                    "say": {
+                      "label": "<p>Take between one and three matches.</p>",
+                      "mode": "instant"
+                    }
+                  },
+                  {
+                    "choice": {
+                      "options": [
+                        {
+                          "label": "<span>&nbsp;&nbsp; 📍 &nbsp;&nbsp;<span>",
+                          "commands": [
+                            {
+                              "eval": {
+                                "script": "console.warn(\"performTurn\", \"player took 1\");\r\ngame.handleTurn(1);"
+                              }
+                            }
+                          ],
+                          "visible": "$game.currentMatches >= 1"
+                        },
+                        {
+                          "label": "<span>📍 &nbsp; 📍<span>",
+                          "commands": [
+                            {
+                              "eval": {
+                                "script": "console.warn(\"performTurn\", \"player took 2\");\r\ngame.handleTurn(2);"
+                              }
+                            }
+                          ],
+                          "visible": "$game.currentMatches >= 2"
+                        },
+                        {
+                          "label": "📍📍📍",
+                          "commands": [
+                            {
+                              "eval": {
+                                "script": "console.warn(\"performTurn\", \"player took 3\");\r\ngame.handleTurn(3);"
+                              }
+                            }
+                          ],
+                          "visible": "$game.currentMatches >= 3"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "eval": {
+                "script": "console.warn(\"performTurn\", \"ai turn\");\r\ngame.handleTurn(ai.performAiTurn());"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p><eval>(game.isPlayerTurn ? &quot;She&quot; : &quot;You&quot;) + &quot; took &quot; + (game.lastMatches - game.currentMatches) + &quot; matches.&quot;</eval></p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "eval": {
+          "script": "// add images to slide show queue\r\n\r\nvar useCurrentSet = false;\r\n\r\nfor (var i = game.lastMatches - 1; i > game.currentMatches - 1; i--) {\r\n  var index = i;\r\n\r\n  if (index % 15 === 0) {\r\n    slideShow.imagePageStack.push(\"nim-image-0\");\r\n    console.warn(\"performTurn\", \"adding 0 to slide show\");\r\n    \r\n    useCurrentSet = true;\r\n  }\r\n\r\n  index -= (useCurrentSet ? game.currentSet : game.lastSet) * 15\r\n\r\n  slideShow.imagePageStack.push(\"nim-image-\"+ index);\r\n  console.warn(\"performTurn\", \"adding \" + index + \" to slide show\");\r\n}\r\n"
+        }
+      },
+      {
+        "goto": {
+          "target": "slideShow"
+        }
+      }
+    ],
+    "nim-image-1": [
+      {
+        "image": {
+          "locator": "file:nim-1.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-1\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-1\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-2": [
+      {
+        "image": {
+          "locator": "file:nim-2.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-2\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-2\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-3": [
+      {
+        "image": {
+          "locator": "file:nim-3.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-3\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-3\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-4": [
+      {
+        "image": {
+          "locator": "file:nim-4.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-4\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-4\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-5": [
+      {
+        "image": {
+          "locator": "file:nim-5.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-5\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-5\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-6": [
+      {
+        "image": {
+          "locator": "file:nim-6.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-6\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-6\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-7": [
+      {
+        "image": {
+          "locator": "file:nim-7.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-7\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-7\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-8": [
+      {
+        "image": {
+          "locator": "file:nim-8.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-8\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-8\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-9": [
+      {
+        "image": {
+          "locator": "file:nim-9.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-9\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-9\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-10": [
+      {
+        "image": {
+          "locator": "file:nim-10.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-10\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-10\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-11": [
+      {
+        "image": {
+          "locator": "file:nim-11.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-11\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-11\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-12": [
+      {
+        "image": {
+          "locator": "file:nim-12.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-12\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-12\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-13": [
+      {
+        "image": {
+          "locator": "file:nim-13.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-13\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-13\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-14": [
+      {
+        "image": {
+          "locator": "file:nim-14.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-14\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-14\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-image-15": [
+      {
+        "image": {
+          "locator": "file:nim-15.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-15\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-15\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-task-1": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-2": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-3": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-4": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-5": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-6": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-7": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-8": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-9": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-10": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-11": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-12": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-13": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-14": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-task-15": [
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "nim-image-0": [
+      {
+        "image": {
+          "locator": "file:nim-0.jpg"
+        }
+      },
+      {
+        "eval": {
+          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-0\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-0\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        }
+      }
+    ],
+    "nim-task-0": [
+      {
+        "if": {
+          "condition": "game.getCurrentSetCurrentMatches() <= 0",
+          "commands": [
+            {
+              "say": {
+                "label": "<p>Someone won or lost. // TODO</p>"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "newTurn"
+              }
             }
           ]
         }
@@ -3664,9 +4153,15 @@
       "type": "image/jpeg",
       "width": 1110,
       "height": 778
+    },
+    "match-taken.mp3": {
+      "id": 1646580,
+      "hash": "3533e7cf92e7fba053b0dde7ccf34864444725fa",
+      "size": 6623,
+      "type": "audio/mpeg"
     }
   },
-  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: true,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 5 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n",
+  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: true,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 4 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n\r\nvar game = {\r\n  maxMatches: 15,\r\n  currentMatches: 15,\r\n  currentSet: 0,\r\n  lastMatches: 15,\r\n  lastSet: 0,\r\n  isPlayerTurn: true,\r\n  handleTurn: function(count) {\r\n    game.lastMatches = game.currentMatches;\r\n    game.lastSet = game.currentSet;\r\n\r\n    for (var i = 1; i < count + 1; i++) {\r\n      console.info(\"game\", \"handleTurn\", \"removing match\", i, \"of\", count);\r\n\r\n      game.currentMatches -= 1;\r\n\r\n      if (game.currentMatches % 15 === 0 && game.currentSet > 0) {\r\n        game.currentSet -= 1;\r\n      }\r\n    }\r\n\r\n    if (game.currentMatches <= 0) {\r\n      game.currentMatches === 0;\r\n    }\r\n\r\n    game.isPlayerTurn = !game.isPlayerTurn;\r\n\r\n    console.log(\"game\", \"handleTurn\", game);\r\n\r\n    return game.currentMatches === 0;\r\n  },\r\n  getCurrentSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.currentSet * 15);\r\n  },\r\n  getCurrentSetLastMatches: function () {\r\n    return game.lastMatches - (game.currentSet * 15);\r\n  },\r\n  getLastSetLastMatches: function () {\r\n    return game.lastMatches - (game.lastSet * 15);\r\n  },\r\n  getLastSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.lastSet * 15);\r\n  },\r\n};\r\n\r\nvar ai = {\r\n  performPlayerTurn: function () {\r\n    console.log(\"ai\", \"performPlayerTurn\");\r\n\r\n    return ai.performTurn(settings.autoPlayDifficulty);\r\n  },\r\n  performAiTurn: function () {\r\n    console.log(\"ai\", \"performAiTurn\");\r\n\r\n    return ai.performTurn(settings.difficulty);\r\n  },\r\n  performTurn: function (difficulty) {\r\n    console.log(\"ai\", \"performTurn\", \"difficulty:\", difficulty);\r\n    var count = 0;\r\n\r\n    switch(difficulty){\r\n      case  0:\r\n        count = ai.performVeryEasyTurn();\r\n        break;\r\n      case  1:\r\n         count = ai.performVeryEasyOrHardTurnByChance(75);\r\n        break;\r\n      case  2:\r\n         count = ai.performVeryEasyOrHardTurnByChance(50);\r\n         break;\r\n      case  3:\r\n         count = ai.performVeryEasyOrHardTurnByChance(25);\r\n         break;\r\n      case  4:\r\n         count = ai.performVeryHardTurn();\r\n        break;\r\n    }\r\n\r\n    return count > game.currentMatches ? game.currentMatches : count;\r\n  },\r\n  performVeryEasyTurn: function () {\r\n    console.log(\"ai\", \"performVeryEasyTurn\");\r\n\r\n    return utils.getRandomInt(1, 3);\r\n  },\r\n  performVeryHardTurn: function () {\r\n    console.log(\"ai\", \"performVeryHardTurn\");\r\n    \r\n    var matches = game.currentMatches % 4;\r\n    // if matches is 0, ai will lose if player does not miss play any further\r\n    return matches === 0 ? ai.performVeryEasyTurn() : matches;\r\n  },\r\n  performVeryEasyOrHardTurnByChance: function (chanceForVeryEasy) {\r\n    console.log(\"ai\", \"performVeryEasyOrHardTurnByChance\");\r\n\r\n    if(utils.getRandomInt(1, 100) >= chanceForVeryEasy) {\r\n      return ai.performVeryEasyTurn();\r\n    }\r\n\r\n    return ai.performVeryHardTurn();\r\n  }\r\n};\r\n\r\nvar utils = {\r\n  getRandomInt: function(min, max) {\r\n    return Math.floor((Math.random() * max) + min);\r\n  }\r\n}",
   "galleries": {},
   "editor": {
     "recentImages": []
