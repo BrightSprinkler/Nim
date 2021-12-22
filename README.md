@@ -98,6 +98,20 @@ Enabling auto play replaces the players manual decision with an automatic AI dec
 For this decision a difficulty level can be picked as well.
 Basically 2 AIs are playing against each other and the game can be played in a "Hands Free"-Mode.
 
+## Edging and Cumming
+
+If you edge or cum when not allowed to something has to happen.
+
+### Edging
+
+* Abort current task
+* Wait some time to cool down
+* If Cbt is enabled, maybe some cbt tasks
+
+### Cumming
+
+* End tease with ruin
+
 ## Tasks
 Mingames:
 - RL GL
@@ -139,10 +153,58 @@ Techniques:
 - squeezing
 
 Edging
+
 ### Intro
 
-- explanation
-- warmup (can be skipped)
+Stuff that happens when the player starts the tease.
+
+#### Explanation
+
+Do you want me to explain what we are going to do today?
+
+YES / NO (skip explanation)
+
+We are going to play a game of Nim.
+There will be matches on the table.
+We will take turns taking away one to three matches.
+Whoever takes the last match wins.
+
+After each turn I will tease you a bit.
+This will prepare you for the grand finale.
+If you win I will let you cum.
+If you lose you get denied or we play another round.
+Maybe you are victorious next time.
+
+#### Warmup
+
+Are you hard already?
+
+YES (skip explanation) / NO 
+
+Then get your cock out and prepare to stroke to the beat.
+
+WAIT FOR ENTER
+
+5 seconds 60 bpm
+6 seconds 120 bpm
+7 seconds 180 bpm
+8 seconds 240 bpm
+9 seconds 300 bpm
+10 seconds 240 bpm
+11 seconds 180 bpm
+12 seconds 120 bpm
+13 seconds 60 bpm
+
+Let's begin.
+
+#### Coin Flip
+
+Heads or tails?
+
+COIN SOUND
+IMAGE OF RESULT (HEAD OR TAILS)
+
+I will start then. OR You go first.
 
 ### Denial
 
@@ -244,19 +306,26 @@ Edging
 
 ## Character
 
+To simplify dialogues both characters are going to have the same name: Cana
+
+
 ### Hentai
 
+* Cana Alberona
+* https://www.fairytailhentaidb.com/index?/category/cana
+* https://rule34.paheal.net/post/list/Cana_Alberona/1
+* https://rule34.xxx/index.php?page=post&s=list&tags=cana_alberona+
+
 ### Normal
+
+* Little Caprice
+* https://www.pornpics.de/pornstars/little-caprice/
 
 ## Sources
 
 * https://www.freepngimg.com/png/58348-alarm-icon-cartoon-timer-clock-free-photo-png
 * https://openclipart.org/detail/35431/tango-preferences-system
-* https://www.reddit.com/r/codegeassnsfw/top/?t=all
-* https://rule34.paheal.net/post/list/C%5EdC%5Ed/1
-* https://www.reddit.com/r/BigAnimeTiddies/comments/rk7opd/koyanskaya_fatego/
-* https://www.reddit.com/r/BikiniBodies/comments/f1ccpt/showing_a_little_underboob/
-* https://www.reddit.com/r/ballbustinghentai/comments/mpv1wr/such_a_great_technique/
-* https://www.reddit.com/r/BallBusting/comments/qnlotf/my_stress_balls/
 * https://www.onlinelabels.com/clip-art/Brain-Light-Bulb-By-Elisa-Riva-125054
 * https://www.onlinelabels.com/clip-art/Hand-Silhouette-123714
+* http://www.yuribs.com/pics/eurocoins/GER1_1,00.png
+* http://www.yuribs.com/pics/eurocoins/EUR2_1,00_2007.png

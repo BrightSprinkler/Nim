@@ -3,7 +3,7 @@ var settings = {
   // 1 = 30
   // 2 = 45
   gameLength: 0,
-  hentaiEnabled: true,
+  hentaiEnabled: false,
   cbtEnabled: false,
   onlyCbtEnabled: false,
   // 0 = very easy
@@ -124,8 +124,27 @@ var ai = {
   }
 };
 
+var coin = {
+  prediction: true,
+  lastResult: true,
+  flip: function () {
+    coin.lastResult = utils.getRandomInt(1, 2) === 1;
+    
+    return coin.lastResult;
+  }
+};
+
 var utils = {
   getRandomInt: function(min, max) {
     return Math.floor((Math.random() * max) + min);
+  },
+  padEnd: function(value, char, count) {
+    
+    // where the fk is padEnd on the string object
+    for(var i = 0; i < count; i++){
+      value += char;
+    }
+
+    return value;
   }
-}
+};

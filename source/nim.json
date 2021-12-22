@@ -287,8 +287,319 @@
     ],
     "start-warmup": [
       {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647712"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648146"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Are you hard already?</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Yes ✔",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "No ❌",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>Then get you cock out and prepare to stroke to the beat.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p><span style=\"color: #ffee58\"><u><strong>Enter/Click To Continue</strong></u></span></p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "if": {
+                    "condition": "settings.hentaiEnabled",
+                    "commands": [
+                      {
+                        "image": {
+                          "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647710"
+                        }
+                      }
+                    ],
+                    "elseCommands": [
+                      {
+                        "image": {
+                          "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648133"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-60.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "5s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-120.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "6s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-180.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "7s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "if": {
+                    "condition": "settings.hentaiEnabled",
+                    "commands": [
+                      {
+                        "image": {
+                          "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647714"
+                        }
+                      }
+                    ],
+                    "elseCommands": [
+                      {
+                        "image": {
+                          "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648134"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-240.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "8s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-300.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "9s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-240.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "10s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "if": {
+                    "condition": "settings.hentaiEnabled",
+                    "commands": [
+                      {
+                        "image": {
+                          "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647710"
+                        }
+                      }
+                    ],
+                    "elseCommands": [
+                      {
+                        "image": {
+                          "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648133"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-180.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "11s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-120.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "12s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                },
+                {
+                  "if": {
+                    "condition": "settings.hentaiEnabled",
+                    "commands": [
+                      {
+                        "image": {
+                          "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647712"
+                        }
+                      }
+                    ],
+                    "elseCommands": [
+                      {
+                        "image": {
+                          "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648145"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "audio.play": {
+                    "locator": "file:no-60.mp3",
+                    "id": "beat"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "13s",
+                    "style": "secret"
+                  }
+                },
+                {
+                  "eval": {
+                    "script": "Sound.get(\"beat\").stop();"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Let&#39;s begin.</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
         "goto": {
-          "target": "newTurn"
+          "target": "start-game"
         }
       }
     ],
@@ -3383,13 +3694,8 @@
                   }
                 },
                 {
-                  "eval": {
-                    "script": "game.currentSet = settings.gameLength;\r\n\r\nswitch(settings.gameLength)  {\r\n  case 0:\r\n    game.maxMatches = 15;\r\n    break;\r\n  case 1:\r\n    game.maxMatches = 30;\r\n    break;\r\n  case 2:\r\n    game.maxMatches = 45;\r\n    break;\r\n}\r\n\r\ngame.currentMatches = game.maxMatches;\r\ngame.lastMatches = game.maxMatches;\r\n\r\n"
-                  }
-                },
-                {
                   "goto": {
-                    "target": "start-warmup"
+                    "target": "start-explanation"
                   }
                 }
               ],
@@ -3459,17 +3765,6 @@
           ],
           "elseCommands": [
             {
-              "audio.play": {
-                "locator": "file:match-taken.mp3"
-              }
-            },
-            {
-              "timer": {
-                "duration": "0.5s",
-                "style": "hidden"
-              }
-            },
-            {
               "eval": {
                 "script": "slideShow.running = true;\r\npages.goto(slideShow.imagePageStack.shift());"
               }
@@ -3506,7 +3801,7 @@
     "performTurn": [
       {
         "say": {
-          "label": "<p>Remaining Matches: <eval>game.currentMatches</eval></p>",
+          "label": "<p>Remaining Matches: <eval>game.currentMatches</eval></p><p><eval>utils.padEnd(&quot;&quot;, &quot;📍&quot;, game.currentMatches)</eval></p>",
           "mode": "instant"
         }
       },
@@ -3522,46 +3817,80 @@
                     "eval": {
                       "script": "console.warn(\"performTurn\", \"automatic player turn\");\r\ngame.handleTurn(ai.performPlayerTurn());"
                     }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><eval>&quot;You took &quot; + (game.lastMatches - game.currentMatches) + (game.lastMatches - game.currentMatches === 1 ? &quot; match.&quot; : &quot; matches.&quot;)</eval></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
                   }
                 ],
                 "elseCommands": [
                   {
-                    "say": {
-                      "label": "<p>Take between one and three matches.</p>",
-                      "mode": "instant"
-                    }
-                  },
-                  {
                     "choice": {
                       "options": [
                         {
-                          "label": "<span>&nbsp;&nbsp; 📍 &nbsp;&nbsp;<span>",
+                          "label": "Take<br><br><span>&nbsp;&nbsp; 📍 &nbsp;&nbsp;<span>",
                           "commands": [
                             {
                               "eval": {
                                 "script": "console.warn(\"performTurn\", \"player took 1\");\r\ngame.handleTurn(1);"
+                              }
+                            },
+                            {
+                              "audio.play": {
+                                "locator": "file:menu-button-click.mp3"
+                              }
+                            },
+                            {
+                              "timer": {
+                                "duration": "0.5s",
+                                "style": "hidden"
                               }
                             }
                           ],
                           "visible": "$game.currentMatches >= 1"
                         },
                         {
-                          "label": "<span>📍 &nbsp; 📍<span>",
+                          "label": "Take<br><br><span>📍 &nbsp; 📍<span>",
                           "commands": [
                             {
                               "eval": {
                                 "script": "console.warn(\"performTurn\", \"player took 2\");\r\ngame.handleTurn(2);"
+                              }
+                            },
+                            {
+                              "audio.play": {
+                                "locator": "file:menu-button-click.mp3"
+                              }
+                            },
+                            {
+                              "timer": {
+                                "duration": "0.5s",
+                                "style": "hidden"
                               }
                             }
                           ],
                           "visible": "$game.currentMatches >= 2"
                         },
                         {
-                          "label": "📍📍📍",
+                          "label": "Take<br><br>📍📍📍",
                           "commands": [
                             {
                               "eval": {
                                 "script": "console.warn(\"performTurn\", \"player took 3\");\r\ngame.handleTurn(3);"
+                              }
+                            },
+                            {
+                              "audio.play": {
+                                "locator": "file:menu-button-click.mp3"
+                              }
+                            },
+                            {
+                              "timer": {
+                                "duration": "0.5s",
+                                "style": "hidden"
                               }
                             }
                           ],
@@ -3579,15 +3908,15 @@
               "eval": {
                 "script": "console.warn(\"performTurn\", \"ai turn\");\r\ngame.handleTurn(ai.performAiTurn());"
               }
+            },
+            {
+              "say": {
+                "label": "<p><eval>&quot;She took &quot; + (game.lastMatches - game.currentMatches) + (game.lastMatches - game.currentMatches === 1 ? &quot; match.&quot; : &quot; matches.&quot;)</eval></p>",
+                "mode": "autoplay",
+                "allowSkip": true
+              }
             }
           ]
-        }
-      },
-      {
-        "say": {
-          "label": "<p><eval>(game.isPlayerTurn ? &quot;She&quot; : &quot;You&quot;) + &quot; took &quot; + (game.lastMatches - game.currentMatches) + &quot; matches.&quot;</eval></p>",
-          "mode": "autoplay",
-          "allowSkip": true
         }
       },
       {
@@ -3608,8 +3937,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-1\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-1\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3620,8 +3975,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-2\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-2\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3632,8 +4013,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-3\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-3\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3644,8 +4051,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-4\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-4\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3656,8 +4089,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-5\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-5\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3668,8 +4127,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-6\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-6\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3680,8 +4165,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-7\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-7\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3692,8 +4203,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-8\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-8\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3704,8 +4241,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-9\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-9\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3716,8 +4279,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-10\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-10\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3728,8 +4317,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-11\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-11\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3740,8 +4355,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-12\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-12\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3752,8 +4393,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-13\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-13\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3764,8 +4431,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-14\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-14\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3776,8 +4469,34 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-15\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-15\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "audio.play": {
+                "locator": "file:match-taken.mp3",
+                "volume": 0.2
+              }
+            },
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
@@ -3893,19 +4612,53 @@
         }
       },
       {
-        "eval": {
-          "script": "if (slideShow.running) {\r\n  console.warn(\"nim-image-0\", \"going to slide show\");\r\n  pages.goto(\"slideShow\");\r\n} else {\r\n  console.warn(\"nim-image-0\", \"going to handle turn\");\r\n  pages.goto(\"performTurn\");\r\n}"
+        "if": {
+          "condition": "slideShow.running",
+          "commands": [
+            {
+              "timer": {
+                "duration": "0.5s",
+                "style": "hidden"
+              }
+            },
+            {
+              "goto": {
+                "target": "slideShow"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "goto": {
+                "target": "performTurn"
+              }
+            }
+          ]
         }
       }
     ],
     "nim-task-0": [
       {
         "if": {
-          "condition": "game.getCurrentSetCurrentMatches() <= 0",
+          "condition": "game.currentMatches <= 0",
           "commands": [
             {
-              "say": {
-                "label": "<p>Someone won or lost. // TODO</p>"
+              "if": {
+                "condition": "game.isPlayerTurn",
+                "commands": [
+                  {
+                    "say": {
+                      "label": "<p>AI WON</p>"
+                    }
+                  }
+                ],
+                "elseCommands": [
+                  {
+                    "say": {
+                      "label": "<p>PLAYER  WON</p>"
+                    }
+                  }
+                ]
               }
             }
           ],
@@ -3916,6 +4669,359 @@
               }
             }
           ]
+        }
+      }
+    ],
+    "start-game": [
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647712"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648147"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Heads or tails?</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.autoPlayEnabled",
+          "commands": [
+            {
+              "eval": {
+                "script": "coin.prediction = true;"
+              }
+            },
+            {
+              "say": {
+                "label": "<p>Heads? Let&#39;s see...</p>",
+                "mode": "autoplay",
+                "allowSkip": true
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "choice": {
+                "options": [
+                  {
+                    "label": "Heads",
+                    "commands": [
+                      {
+                        "eval": {
+                          "script": "coin.prediction = true;"
+                        }
+                      },
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "say": {
+                          "label": "<p>Heads? Let&#39;s see...</p>",
+                          "mode": "autoplay",
+                          "allowSkip": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Tails",
+                    "commands": [
+                      {
+                        "eval": {
+                          "script": "coin.prediction = false;"
+                        }
+                      },
+                      {
+                        "audio.play": {
+                          "locator": "file:menu-button-click.mp3"
+                        }
+                      },
+                      {
+                        "timer": {
+                          "duration": "0.1s",
+                          "style": "hidden"
+                        }
+                      },
+                      {
+                        "say": {
+                          "label": "<p>Tails? Let&#39;s see...</p>",
+                          "mode": "autoplay",
+                          "allowSkip": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "image": {
+          "locator": "file:nim-0.jpg"
+        }
+      },
+      {
+        "audio.play": {
+          "locator": "file:coin-flip.mp3"
+        }
+      },
+      {
+        "timer": {
+          "duration": "0.9s",
+          "style": "hidden"
+        }
+      },
+      {
+        "if": {
+          "condition": "coin.flip()",
+          "commands": [
+            {
+              "image": {
+                "locator": "file:coin-heads.jpg"
+              }
+            },
+            {
+              "say": {
+                "label": "<p><span style=\"color: #bbdefb\"><strong>Heads</strong></span></p>",
+                "mode": "autoplay",
+                "allowSkip": true
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "file:coin-tails.jpg"
+              }
+            },
+            {
+              "say": {
+                "label": "<p><span style=\"color: #bbdefb\"><strong>Tails</strong></span></p>",
+                "mode": "autoplay",
+                "allowSkip": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "eval": {
+          "script": "game.isPlayerTurn = coin.prediction === coin.lastResult;"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><eval>game.isPlayerTurn ? &quot;You go first.&quot; : &quot;I will start.&quot;</eval></p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "eval": {
+          "script": "game.currentSet = settings.gameLength;\r\n\r\nswitch(settings.gameLength)  {\r\n  case 0:\r\n    game.maxMatches = 15;\r\n    break;\r\n  case 1:\r\n    game.maxMatches = 30;\r\n    break;\r\n  case 2:\r\n    game.maxMatches = 45;\r\n    break;\r\n}\r\n\r\ngame.currentMatches = game.maxMatches;\r\ngame.lastMatches = game.maxMatches;\r\n"
+        }
+      },
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
+    ],
+    "start-explanation": [
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1648046"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648147"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Good to see you!</p>",
+          "mode": "autoplay",
+          "allowSkip": true
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Do you want me to explain what we are going to do today?</p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Yes ✔",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>We are going to play a game of Nim.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "image": {
+                    "locator": "file:nim-15.jpg"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>There will be matches on the table.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "image": {
+                    "locator": "file:nim-12.jpg"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>We will take turns taking away one to three matches.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "image": {
+                    "locator": "file:nim-1.jpg"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>Whoever takes the last match wins.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "if": {
+                    "condition": "settings.hentaiEnabled",
+                    "commands": [
+                      {
+                        "image": {
+                          "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1648048"
+                        }
+                      }
+                    ],
+                    "elseCommands": [
+                      {
+                        "image": {
+                          "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648145"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>After each turn I will tease you a bit.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>This will prepare you for the grand finale.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>If you win I will let you cum.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>If you lose you get denied or we play another round.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p>Maybe you are victorious next time.</p>",
+                    "mode": "autoplay",
+                    "allowSkip": true
+                  }
+                }
+              ]
+            },
+            {
+              "label": "No ❌",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "goto": {
+          "target": "start-warmup"
         }
       }
     ]
@@ -4074,22 +5180,6 @@
       "width": 1110,
       "height": 778
     },
-    "settings-hentai-disabled.jpg": {
-      "id": 1646376,
-      "hash": "647ca5b6ba7812ae0abfa40453767dcce5edf0ad",
-      "size": 385862,
-      "type": "image/jpeg",
-      "width": 1110,
-      "height": 778
-    },
-    "settings-hentai-enabled.jpg": {
-      "id": 1646377,
-      "hash": "366e1b682c0f246cdd4c92983c3ffe8d10250a56",
-      "size": 411426,
-      "type": "image/jpeg",
-      "width": 1110,
-      "height": 778
-    },
     "settings-hentai-cbt-disabled.jpg": {
       "id": 1646407,
       "hash": "e6f526f423c11e0448e70acfa9da32b0db0062b2",
@@ -4159,11 +5249,1339 @@
       "hash": "3533e7cf92e7fba053b0dde7ccf34864444725fa",
       "size": 6623,
       "type": "audio/mpeg"
+    },
+    "coin-flip.mp3": {
+      "id": 1647684,
+      "hash": "fabca91896e75d3c3f1bfb2f767a04b8c5b5c95f",
+      "size": 22410,
+      "type": "audio/mpeg"
+    },
+    "coin-heads.jpg": {
+      "id": 1647685,
+      "hash": "61dbe248f05f0dfbcaac63bdecab7b21893e8667",
+      "size": 367860,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "coin-tails.jpg": {
+      "id": 1647686,
+      "hash": "9d22f6cfd32fb95f8a9566392c3df03ca09cf5b8",
+      "size": 263863,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "no-150.mp3": {
+      "id": 1647687,
+      "hash": "e8af4a5b90dddd65fd1f022af60d476de6e01c96",
+      "size": 2852176,
+      "type": "audio/mpeg"
+    },
+    "no-180.mp3": {
+      "id": 1647688,
+      "hash": "dbcc6f8c4bbcebc85771c3389993ac2a336d0480",
+      "size": 2933512,
+      "type": "audio/mpeg"
+    },
+    "no-210.mp3": {
+      "id": 1647689,
+      "hash": "257758840dcd99f4b38a4014691bac76a75f3961",
+      "size": 3033801,
+      "type": "audio/mpeg"
+    },
+    "no-240.mp3": {
+      "id": 1647690,
+      "hash": "d90b9b98051fd7d90872e99a3eb0b6bfa2d3eaef",
+      "size": 3095414,
+      "type": "audio/mpeg"
+    },
+    "no-270.mp3": {
+      "id": 1647691,
+      "hash": "20f608bc931ec4d6b225e52434d1bce283d361cd",
+      "size": 3170480,
+      "type": "audio/mpeg"
+    },
+    "no-300.mp3": {
+      "id": 1647692,
+      "hash": "d7c423d33ca6e03a0169d23b45acc8884cdbd1d0",
+      "size": 3270853,
+      "type": "audio/mpeg"
+    },
+    "no-30.mp3": {
+      "id": 1647693,
+      "hash": "1712a8cb984ae57f550e512f577d97494a45553e",
+      "size": 2498393,
+      "type": "audio/mpeg"
+    },
+    "no-60.mp3": {
+      "id": 1647694,
+      "hash": "670b61a05bc62dcef8cd4b8be35a620c4681ffb7",
+      "size": 2591871,
+      "type": "audio/mpeg"
+    },
+    "no-90.mp3": {
+      "id": 1647695,
+      "hash": "a5751b8b1b4f791f2af3f86c9236c2092996f398",
+      "size": 2681955,
+      "type": "audio/mpeg"
+    },
+    "no-120.mp3": {
+      "id": 1647696,
+      "hash": "5cd6836d85508143281fa8e3bb9c8ff7fcbe4c3b",
+      "size": 2778744,
+      "type": "audio/mpeg"
+    },
+    "settings-hentai-disabled.jpg": {
+      "id": 1648197,
+      "hash": "9b009bfc581a3b20364c393e68865dc4d403e079",
+      "size": 329404,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
+    },
+    "settings-hentai-enabled.jpg": {
+      "id": 1648198,
+      "hash": "632395be4704c9beb06645c81d7af48fb0a2734c",
+      "size": 355478,
+      "type": "image/jpeg",
+      "width": 1110,
+      "height": 778
     }
   },
-  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: true,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 4 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n\r\nvar game = {\r\n  maxMatches: 15,\r\n  currentMatches: 15,\r\n  currentSet: 0,\r\n  lastMatches: 15,\r\n  lastSet: 0,\r\n  isPlayerTurn: true,\r\n  handleTurn: function(count) {\r\n    game.lastMatches = game.currentMatches;\r\n    game.lastSet = game.currentSet;\r\n\r\n    for (var i = 1; i < count + 1; i++) {\r\n      console.info(\"game\", \"handleTurn\", \"removing match\", i, \"of\", count);\r\n\r\n      game.currentMatches -= 1;\r\n\r\n      if (game.currentMatches % 15 === 0 && game.currentSet > 0) {\r\n        game.currentSet -= 1;\r\n      }\r\n    }\r\n\r\n    if (game.currentMatches <= 0) {\r\n      game.currentMatches === 0;\r\n    }\r\n\r\n    game.isPlayerTurn = !game.isPlayerTurn;\r\n\r\n    console.log(\"game\", \"handleTurn\", game);\r\n\r\n    return game.currentMatches === 0;\r\n  },\r\n  getCurrentSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.currentSet * 15);\r\n  },\r\n  getCurrentSetLastMatches: function () {\r\n    return game.lastMatches - (game.currentSet * 15);\r\n  },\r\n  getLastSetLastMatches: function () {\r\n    return game.lastMatches - (game.lastSet * 15);\r\n  },\r\n  getLastSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.lastSet * 15);\r\n  },\r\n};\r\n\r\nvar ai = {\r\n  performPlayerTurn: function () {\r\n    console.log(\"ai\", \"performPlayerTurn\");\r\n\r\n    return ai.performTurn(settings.autoPlayDifficulty);\r\n  },\r\n  performAiTurn: function () {\r\n    console.log(\"ai\", \"performAiTurn\");\r\n\r\n    return ai.performTurn(settings.difficulty);\r\n  },\r\n  performTurn: function (difficulty) {\r\n    console.log(\"ai\", \"performTurn\", \"difficulty:\", difficulty);\r\n    var count = 0;\r\n\r\n    switch(difficulty){\r\n      case  0:\r\n        count = ai.performVeryEasyTurn();\r\n        break;\r\n      case  1:\r\n         count = ai.performVeryEasyOrHardTurnByChance(75);\r\n        break;\r\n      case  2:\r\n         count = ai.performVeryEasyOrHardTurnByChance(50);\r\n         break;\r\n      case  3:\r\n         count = ai.performVeryEasyOrHardTurnByChance(25);\r\n         break;\r\n      case  4:\r\n         count = ai.performVeryHardTurn();\r\n        break;\r\n    }\r\n\r\n    return count > game.currentMatches ? game.currentMatches : count;\r\n  },\r\n  performVeryEasyTurn: function () {\r\n    console.log(\"ai\", \"performVeryEasyTurn\");\r\n\r\n    return utils.getRandomInt(1, 3);\r\n  },\r\n  performVeryHardTurn: function () {\r\n    console.log(\"ai\", \"performVeryHardTurn\");\r\n    \r\n    var matches = game.currentMatches % 4;\r\n    // if matches is 0, ai will lose if player does not miss play any further\r\n    return matches === 0 ? ai.performVeryEasyTurn() : matches;\r\n  },\r\n  performVeryEasyOrHardTurnByChance: function (chanceForVeryEasy) {\r\n    console.log(\"ai\", \"performVeryEasyOrHardTurnByChance\");\r\n\r\n    if(utils.getRandomInt(1, 100) >= chanceForVeryEasy) {\r\n      return ai.performVeryEasyTurn();\r\n    }\r\n\r\n    return ai.performVeryHardTurn();\r\n  }\r\n};\r\n\r\nvar utils = {\r\n  getRandomInt: function(min, max) {\r\n    return Math.floor((Math.random() * max) + min);\r\n  }\r\n}",
-  "galleries": {},
+  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: false,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 4 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n\r\nvar game = {\r\n  maxMatches: 15,\r\n  currentMatches: 15,\r\n  currentSet: 0,\r\n  lastMatches: 15,\r\n  lastSet: 0,\r\n  isPlayerTurn: true,\r\n  handleTurn: function(count) {\r\n    game.lastMatches = game.currentMatches;\r\n    game.lastSet = game.currentSet;\r\n\r\n    for (var i = 1; i < count + 1; i++) {\r\n      console.info(\"game\", \"handleTurn\", \"removing match\", i, \"of\", count);\r\n\r\n      game.currentMatches -= 1;\r\n\r\n      if (game.currentMatches % 15 === 0 && game.currentSet > 0) {\r\n        game.currentSet -= 1;\r\n      }\r\n    }\r\n\r\n    if (game.currentMatches <= 0) {\r\n      game.currentMatches === 0;\r\n    }\r\n\r\n    game.isPlayerTurn = !game.isPlayerTurn;\r\n\r\n    console.log(\"game\", \"handleTurn\", game);\r\n\r\n    return game.currentMatches === 0;\r\n  },\r\n  getCurrentSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.currentSet * 15);\r\n  },\r\n  getCurrentSetLastMatches: function () {\r\n    return game.lastMatches - (game.currentSet * 15);\r\n  },\r\n  getLastSetLastMatches: function () {\r\n    return game.lastMatches - (game.lastSet * 15);\r\n  },\r\n  getLastSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.lastSet * 15);\r\n  },\r\n};\r\n\r\nvar ai = {\r\n  performPlayerTurn: function () {\r\n    console.log(\"ai\", \"performPlayerTurn\");\r\n\r\n    return ai.performTurn(settings.autoPlayDifficulty);\r\n  },\r\n  performAiTurn: function () {\r\n    console.log(\"ai\", \"performAiTurn\");\r\n\r\n    return ai.performTurn(settings.difficulty);\r\n  },\r\n  performTurn: function (difficulty) {\r\n    console.log(\"ai\", \"performTurn\", \"difficulty:\", difficulty);\r\n    var count = 0;\r\n\r\n    switch(difficulty){\r\n      case  0:\r\n        count = ai.performVeryEasyTurn();\r\n        break;\r\n      case  1:\r\n         count = ai.performVeryEasyOrHardTurnByChance(75);\r\n        break;\r\n      case  2:\r\n         count = ai.performVeryEasyOrHardTurnByChance(50);\r\n         break;\r\n      case  3:\r\n         count = ai.performVeryEasyOrHardTurnByChance(25);\r\n         break;\r\n      case  4:\r\n         count = ai.performVeryHardTurn();\r\n        break;\r\n    }\r\n\r\n    return count > game.currentMatches ? game.currentMatches : count;\r\n  },\r\n  performVeryEasyTurn: function () {\r\n    console.log(\"ai\", \"performVeryEasyTurn\");\r\n\r\n    return utils.getRandomInt(1, 3);\r\n  },\r\n  performVeryHardTurn: function () {\r\n    console.log(\"ai\", \"performVeryHardTurn\");\r\n    \r\n    var matches = game.currentMatches % 4;\r\n    // if matches is 0, ai will lose if player does not missplay any further\r\n    return matches === 0 ? ai.performVeryEasyTurn() : matches;\r\n  },\r\n  performVeryEasyOrHardTurnByChance: function (chanceForVeryEasy) {\r\n    console.log(\"ai\", \"performVeryEasyOrHardTurnByChance\");\r\n\r\n    if(utils.getRandomInt(1, 100) >= chanceForVeryEasy) {\r\n      return ai.performVeryEasyTurn();\r\n    }\r\n\r\n    return ai.performVeryHardTurn();\r\n  }\r\n};\r\n\r\nvar coin = {\r\n  prediction: true,\r\n  lastResult: true,\r\n  flip: function () {\r\n    coin.lastResult = utils.getRandomInt(1, 2) === 1;\r\n    \r\n    return coin.lastResult;\r\n  }\r\n};\r\n\r\nvar utils = {\r\n  getRandomInt: function(min, max) {\r\n    return Math.floor((Math.random() * max) + min);\r\n  },\r\n  padEnd: function(value, char, count) {\r\n    \r\n    // where the fk is padEnd on the string object\r\n    for(var i = 0; i < count; i++){\r\n      value += char;\r\n    }\r\n\r\n    return value;\r\n  }\r\n};",
+  "galleries": {
+    "349df617-4375-4f58-88b8-df0a3ea18550": {
+      "name": "cana-hentai",
+      "images": [
+        {
+          "id": 1647697,
+          "hash": "d9bca394718841d9634bc8d9afb82b2eb36c14a6",
+          "size": 339634,
+          "width": 1020,
+          "height": 1419
+        },
+        {
+          "id": 1647698,
+          "hash": "a2521176394f346bab55b4bec8426116d2a9faee",
+          "size": 334165,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1647699,
+          "hash": "0f53822b60f6c497c2f5ed4c37239d448ccba028",
+          "size": 529101,
+          "width": 850,
+          "height": 734
+        },
+        {
+          "id": 1647700,
+          "hash": "290cc9e83980a23c8e5022d9ca610773838c4d93",
+          "size": 41163,
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "id": 1647701,
+          "hash": "f06fac9c66bcbbd85b43e4d896831e5e8a61ca8f",
+          "size": 120700,
+          "width": 1078,
+          "height": 1080
+        },
+        {
+          "id": 1647702,
+          "hash": "c5de875bc687688bd8f50af7a50594ed011ab66d",
+          "size": 139152,
+          "width": 1045,
+          "height": 1500
+        },
+        {
+          "id": 1647703,
+          "hash": "f1482589aee8dae4452ddcd7246f59bdf0bf8061",
+          "size": 269222,
+          "width": 1656,
+          "height": 1203
+        },
+        {
+          "id": 1647704,
+          "hash": "437c2a7613c1cd5f18c9105f7b111e6696638137",
+          "size": 1013111,
+          "width": 1600,
+          "height": 2202
+        },
+        {
+          "id": 1647705,
+          "hash": "dd846cb56d85b2030bf2730b8c14de57be726e0b",
+          "size": 82858,
+          "width": 656,
+          "height": 658
+        },
+        {
+          "id": 1647706,
+          "hash": "5ceeb84cee1cc496bfe46a9546543805f27cfb25",
+          "size": 68954,
+          "width": 850,
+          "height": 1169
+        },
+        {
+          "id": 1647707,
+          "hash": "dabc4a2280ddbe1caff3ab26c1b33a5cd98b91e8",
+          "size": 284110,
+          "width": 1018,
+          "height": 2048
+        },
+        {
+          "id": 1647708,
+          "hash": "a2847ab4c881085eed33de089d56466e0d58ebae",
+          "size": 205249,
+          "width": 850,
+          "height": 1104
+        },
+        {
+          "id": 1647709,
+          "hash": "4d3c94ce3407657d44e1631290eb34b9a7a7af5a",
+          "size": 210342,
+          "width": 850,
+          "height": 1314
+        },
+        {
+          "id": 1647710,
+          "hash": "ca86ecc5a3eceed60c51aec3b7dc1fa6e705f1a5",
+          "size": 288915,
+          "width": 850,
+          "height": 1275
+        },
+        {
+          "id": 1647711,
+          "hash": "504b08c79d0237b0ba8de7e6c037ce69e1e35e2c",
+          "size": 208997,
+          "width": 850,
+          "height": 1275
+        },
+        {
+          "id": 1647712,
+          "hash": "986032a96da57ae21cf5708a631335e0944673a8",
+          "size": 172578,
+          "width": 850,
+          "height": 1180
+        },
+        {
+          "id": 1647713,
+          "hash": "a715c761f5ada2eb8fc417f6462679c2bf422ce2",
+          "size": 160313,
+          "width": 850,
+          "height": 889
+        },
+        {
+          "id": 1647714,
+          "hash": "93425c02daedf10fad1a4c4af171b80ff8df2f36",
+          "size": 275827,
+          "width": 850,
+          "height": 1425
+        },
+        {
+          "id": 1647715,
+          "hash": "12a3fd5446fbfac7ec07d6072be5c758236263a8",
+          "size": 244001,
+          "width": 850,
+          "height": 1314
+        },
+        {
+          "id": 1647716,
+          "hash": "06d674d7859dfd9dde47b6189559f19c94b68c2d",
+          "size": 119329,
+          "width": 850,
+          "height": 596
+        },
+        {
+          "id": 1647717,
+          "hash": "5357109ddb8565eaf526417d512aa456d11f8c76",
+          "size": 88761,
+          "width": 1599,
+          "height": 900
+        },
+        {
+          "id": 1647718,
+          "hash": "3e7a976f359a74d44e7bc31c7d9908b49287dc3d",
+          "size": 143698,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": 1648046,
+          "hash": "e720fcae6aa2b1e1a98e14d154fb6f4081577ab8",
+          "size": 385409,
+          "width": 800,
+          "height": 893
+        },
+        {
+          "id": 1648047,
+          "hash": "390ac636364d6d94663b98011440f321fe4061da",
+          "size": 53585,
+          "width": 745,
+          "height": 1024
+        },
+        {
+          "id": 1648048,
+          "hash": "f295b3d97c79efb0bee9b0b992c785f1bb7154ca",
+          "size": 93674,
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "id": 1648050,
+          "hash": "cece9d043fe933e63a84de0c34b7922f45adc815",
+          "size": 53467,
+          "width": 687,
+          "height": 687
+        }
+      ]
+    },
+    "979cd2aa-488f-47c8-8565-4eb922027ca4": {
+      "name": "cana-norma-1",
+      "images": [
+        {
+          "id": 1648059,
+          "hash": "96e1efe8843067607c21b10196f5438dc9f8078d",
+          "size": 197924,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648060,
+          "hash": "b0e110f9ed17444b9e9251f9a2dc4203e052dae9",
+          "size": 150525,
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "id": 1648061,
+          "hash": "ed1c6580cba093a6dbe4dee3ecb80837e4d531d3",
+          "size": 207945,
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "id": 1648062,
+          "hash": "16d815e6d116de7e0afc5d27d85b4149fe368183",
+          "size": 261501,
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "id": 1648063,
+          "hash": "252931751e925e50bdc8828cd95f82cd9db75f20",
+          "size": 196043,
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "id": 1648064,
+          "hash": "bb893dc55a6ec8e791fd92bade893c1620e7a534",
+          "size": 208076,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648065,
+          "hash": "b2f00167b979b529c4886fe4d4865ebcdd012062",
+          "size": 198767,
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "id": 1648066,
+          "hash": "30b7a7958c94de1979a60e2457a80dbc05c3d0dd",
+          "size": 181990,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648067,
+          "hash": "7a1ce454d8bad2e718fce37e7c50d5df7098d732",
+          "size": 144840,
+          "width": 800,
+          "height": 1200
+        }
+      ]
+    },
+    "51b00d0c-44ee-4202-8898-1e03a4909315": {
+      "name": "cana-norma-2",
+      "images": [
+        {
+          "id": 1648068,
+          "hash": "4b392ef127addaac76431a25d519b086b94fc187",
+          "size": 173920,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648069,
+          "hash": "6b4a1dd0848ba2cce0c8f63120d345743d6d78a4",
+          "size": 148556,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648070,
+          "hash": "a430dae6240945da9ac6cc2b6819a2b39b5f1575",
+          "size": 199978,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648071,
+          "hash": "d6d45f6b2a60dfb7be6543911d8da687cce8620e",
+          "size": 172661,
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "id": 1648072,
+          "hash": "e4faccf7a5c4890060611ee589defa1a9fd2eeb6",
+          "size": 244219,
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "id": 1648073,
+          "hash": "062259bab503cd4401765488af63d9f439b303ae",
+          "size": 190266,
+          "width": 800,
+          "height": 1200
+        }
+      ]
+    },
+    "e67734a3-074a-4f38-ba5f-9cca8ae34501": {
+      "name": "cana-normal-3",
+      "images": [
+        {
+          "id": 1648074,
+          "hash": "57f899bda9a9bcc8a5e29e8a01809c37386d56e6",
+          "size": 160709,
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "id": 1648075,
+          "hash": "58168ea3d6c49bbb524849e7eac8c8648b24d33f",
+          "size": 176859,
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "id": 1648076,
+          "hash": "9c26c231730483e25abd077c1cabf0531f46d9d9",
+          "size": 225706,
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "id": 1648077,
+          "hash": "57118801e185863a6ad1be718eafdfdbb9bfa941",
+          "size": 207490,
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "id": 1648078,
+          "hash": "fc623cf908df9b79871d64b8a68875142cd4f4e6",
+          "size": 158404,
+          "width": 838,
+          "height": 1024
+        },
+        {
+          "id": 1648079,
+          "hash": "eac61ae99f922228802fba20d826d068f0682dbe",
+          "size": 272721,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "id": 1648080,
+          "hash": "2c44bb418d9465971909de1af750116786141092",
+          "size": 222751,
+          "width": 768,
+          "height": 1024
+        }
+      ]
+    },
+    "43f34b03-85c0-45e0-a16c-5d7c6d9dfa81": {
+      "name": "cana-normal-4",
+      "images": [
+        {
+          "id": 1648081,
+          "hash": "8627833988c51e8a87a5a8d6d3381ee43f18050e",
+          "size": 59738,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648082,
+          "hash": "47939c9741c1366b28b30531457067339fe70a6f",
+          "size": 61301,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648083,
+          "hash": "a94ddd707fa8492653a1aacfaf773873d15d85f8",
+          "size": 59544,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648084,
+          "hash": "fcc2d2105fc6187aae4d8fa85d3a1b07c62f3d79",
+          "size": 60703,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648085,
+          "hash": "bd5f4de399ae8f46dcf99c52ff30f51f13ec20fe",
+          "size": 54473,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648086,
+          "hash": "6b6bf6b53ca93b9fc8069bab7ddff21c77a0135a",
+          "size": 68863,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648087,
+          "hash": "59a8ce6daa00ab5a10f7be63557c94f28648a6e9",
+          "size": 64675,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648088,
+          "hash": "84b8bc3827a9a7168a8be1431701fc8b69a703f5",
+          "size": 73712,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648089,
+          "hash": "503f886b3256d91610fe8c0f8c7567dbea749c10",
+          "size": 96819,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648090,
+          "hash": "a84293f157aaf4f7bb7ae350b3bbbe477b287a06",
+          "size": 69790,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648091,
+          "hash": "86ea6796432dbe204858f9f2fe0c9e2a2000f6d7",
+          "size": 69196,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648092,
+          "hash": "8de258319ec31f3e939fe4bfda0125f4d7b255a5",
+          "size": 86192,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648093,
+          "hash": "588983358970b72139348bbe9496eddf2bc9d4f2",
+          "size": 80637,
+          "width": 682,
+          "height": 1024
+        }
+      ]
+    },
+    "500cbe8e-cd98-4c7e-8d24-f5e4ecfb5026": {
+      "name": "cana-normal-5",
+      "images": [
+        {
+          "id": 1648094,
+          "hash": "bf8f7f70115361f707b905098fb69f5217b5514e",
+          "size": 137346,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648095,
+          "hash": "37fd4750ad2ede131ce5818f437510e513d7907c",
+          "size": 178007,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648096,
+          "hash": "c748440390a26e71dae6fb8bd09cced4cd7c989a",
+          "size": 167678,
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "id": 1648097,
+          "hash": "ba6cdfd29196ab2ecc22ad0eed125c6d3dbaaadb",
+          "size": 169116,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648098,
+          "hash": "fb3e55b5f1e2f3b9c9a455839b7bd38264024ba8",
+          "size": 135341,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648099,
+          "hash": "dfd8bdfc4ed1b90305a8fe8a4b8bf8a18be91693",
+          "size": 190493,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648100,
+          "hash": "e17daa9f4f75d4ec913fabc3cfdf728c3d7374db",
+          "size": 175371,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648101,
+          "hash": "7339357eb2736e7a650abf00389e2f5904dd9f1c",
+          "size": 146020,
+          "width": 853,
+          "height": 1280
+        }
+      ]
+    },
+    "26d9e59e-a45f-43fb-9dbf-8360fed3b28f": {
+      "name": "cana-normal-6",
+      "images": [
+        {
+          "id": 1648102,
+          "hash": "2064caf75b328df85a74d18b3eef61b8dd166cac",
+          "size": 152125,
+          "width": 956,
+          "height": 1276
+        },
+        {
+          "id": 1648103,
+          "hash": "53f760f7f570358e3a951098f0d722b3f394509e",
+          "size": 142602,
+          "width": 1276,
+          "height": 956
+        },
+        {
+          "id": 1648104,
+          "hash": "402b9a47cb860ad995824152f1513c783af313fe",
+          "size": 134167,
+          "width": 1276,
+          "height": 956
+        },
+        {
+          "id": 1648105,
+          "hash": "f34892ceeba433a141c9b2496c2103b54c2abe03",
+          "size": 170017,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648106,
+          "hash": "4c2974cdd487a955bf5d181be4e6325d4f143799",
+          "size": 224424,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648107,
+          "hash": "29ceb6813d0711c08c99cbc975d3fb5a0355c4a7",
+          "size": 207143,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648108,
+          "hash": "3ba35d2e1930fffecdef700194012dbe70327695",
+          "size": 223551,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648109,
+          "hash": "8323c1f8681f74623294242db69110202fe847b3",
+          "size": 205762,
+          "width": 720,
+          "height": 1280
+        }
+      ]
+    },
+    "1e338c1d-9348-4e05-9134-b7053d29e179": {
+      "name": "cana-normal-7",
+      "images": [
+        {
+          "id": 1648110,
+          "hash": "397f5e45dd52ed9c5b7370b72bf1f0ed6e071970",
+          "size": 179882,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648111,
+          "hash": "890e93302c88d7e389fe9a46815f0dc5643cbc59",
+          "size": 200020,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648112,
+          "hash": "ac563a50f95b12d043fac46808083086fbb93c63",
+          "size": 149078,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648113,
+          "hash": "6873e4586268e67fc119edce8ac8ad9da57f11ee",
+          "size": 148512,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648114,
+          "hash": "e973633d92814583265c26beca20b6088f3544d6",
+          "size": 143271,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648115,
+          "hash": "346ef761e25946e75ee3d785d0b0d5f6dfd8aba4",
+          "size": 120235,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648116,
+          "hash": "bae554cd484c81dfc424f2255ae11c76d0d220ca",
+          "size": 157325,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648117,
+          "hash": "5f70984f74e2d2117348e4c5410113023d58c7c8",
+          "size": 181357,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648118,
+          "hash": "1a2712afa2aa932cd0315b6cd770fa9fc3a2b137",
+          "size": 182509,
+          "width": 853,
+          "height": 1280
+        }
+      ]
+    },
+    "d0d6b754-ddfc-4f14-919e-c8f150817fe1": {
+      "name": "cana-normal-8",
+      "images": [
+        {
+          "id": 1648119,
+          "hash": "9ef3d73bf7b766ea7fae900b1d027fd6399329eb",
+          "size": 109428,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648120,
+          "hash": "92c6c2d92448af3e29f85d59326783afae9af88f",
+          "size": 153113,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648121,
+          "hash": "2e44d88aead60feb5a2d65fcc7f522d9ec9b7951",
+          "size": 153946,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648122,
+          "hash": "b24781a7980b0439e48e24ee34b8f6a6e4053f64",
+          "size": 147445,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648123,
+          "hash": "dabb9c2bcfb59938cf8abf280690f0b27d99f4ac",
+          "size": 142718,
+          "width": 100,
+          "height": 100
+        },
+        {
+          "id": 1648124,
+          "hash": "5866d04ad3f56f50fe9d47e304b70516923758ce",
+          "size": 113896,
+          "width": 853,
+          "height": 1280
+        }
+      ]
+    },
+    "917eb0ad-245e-4601-b6ce-0b21f55ab730": {
+      "name": "cana-normal-9",
+      "images": [
+        {
+          "id": 1648125,
+          "hash": "b4e01996876e34c584351447ecaba0786e4eb672",
+          "size": 273133,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648126,
+          "hash": "84209bb5523d3c990f30938b1b7914761145f871",
+          "size": 233325,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648127,
+          "hash": "33db875f5f67ad262d87303d84d96b718d4c77bc",
+          "size": 96594,
+          "width": 630,
+          "height": 1280
+        },
+        {
+          "id": 1648128,
+          "hash": "ad2a63dc754d1c6a2b244ec44475d51a3d5d8145",
+          "size": 174195,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648129,
+          "hash": "efc11589f78fe38111c7a69eb19dc732d1059c62",
+          "size": 229809,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648130,
+          "hash": "53ed03ac6938650f025b28a200520bc85f6fb64c",
+          "size": 164614,
+          "width": 958,
+          "height": 1278
+        },
+        {
+          "id": 1648131,
+          "hash": "1fa5ee5c5c05cb7d29b7fd79a569d6ee47932374",
+          "size": 265258,
+          "width": 1276,
+          "height": 956
+        },
+        {
+          "id": 1648132,
+          "hash": "68fe0dd27fa8a81a36fe8361fec74226062015a1",
+          "size": 221715,
+          "width": 956,
+          "height": 1276
+        }
+      ]
+    },
+    "e62706d4-0918-4ba5-ac4e-e8842b08fb73": {
+      "name": "cana-normal-10",
+      "images": [
+        {
+          "id": 1648133,
+          "hash": "bc590cb780ed7c261871571ece120e69b77b506a",
+          "size": 202673,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648134,
+          "hash": "5e3d6afc685703b4de3237434500a2cb7e4b2acb",
+          "size": 213005,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648135,
+          "hash": "49006f1d122722f29ed79bb64e2d357408a85559",
+          "size": 180648,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648136,
+          "hash": "4f026c07d86a4db8903d7a98bc9fe42d08ec3b40",
+          "size": 228000,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648137,
+          "hash": "0904f74e8f29b6904346baf8d4e80d873ef1496a",
+          "size": 198607,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648138,
+          "hash": "5f31a8dffc7318bed60d08a25bd57d339f307996",
+          "size": 224458,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648139,
+          "hash": "06749153ae18fc92e923a7af8b28a7344cf76b0c",
+          "size": 180229,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648140,
+          "hash": "87a5fda8d072e4132be60dc1170f553006274688",
+          "size": 204161,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648141,
+          "hash": "1b86a143f53a9ad8b18023fa8148610d76feb020",
+          "size": 164334,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648142,
+          "hash": "beae66f490c0e7da6833d86953fe56e58cccc106",
+          "size": 177717,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648143,
+          "hash": "204e0e8ab9eac2fa41034849e91d103ba4a4cec0",
+          "size": 175136,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648144,
+          "hash": "85f91c912f6fef886067d0820f1304d1dc812293",
+          "size": 166723,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648145,
+          "hash": "71371f5c1fa1e9b6829287378d6d2816bcdb8e39",
+          "size": 189560,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648146,
+          "hash": "290520855cd9fb136e61b185fb446ceedb440129",
+          "size": 165926,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648147,
+          "hash": "0b55ecad53831051762a327000a047de8a03a6f9",
+          "size": 177704,
+          "width": 853,
+          "height": 1280
+        }
+      ]
+    },
+    "a5517b6a-d132-4339-8a81-957d0857bb51": {
+      "name": "cana-normal-11",
+      "images": [
+        {
+          "id": 1648148,
+          "hash": "2c883f3b8e28700e91027833c99fe069459c420c",
+          "size": 243931,
+          "width": 801,
+          "height": 1200
+        },
+        {
+          "id": 1648149,
+          "hash": "03ee868eba56c408b7cc0e2f09f75e2ae25ebae6",
+          "size": 209392,
+          "width": 801,
+          "height": 1200
+        },
+        {
+          "id": 1648150,
+          "hash": "4550a136879cc470562a5ae4a942a39bbb378b77",
+          "size": 230616,
+          "width": 801,
+          "height": 1200
+        },
+        {
+          "id": 1648151,
+          "hash": "26b60131390c1e0bca6a0aff3f8707f123665bbf",
+          "size": 222118,
+          "width": 801,
+          "height": 1200
+        },
+        {
+          "id": 1648152,
+          "hash": "b1f19ffa5bd288665fa7e6b1e12add7a98d75ccf",
+          "size": 202910,
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "id": 1648153,
+          "hash": "b38038293331bc3aa17f79f7d4d22636cffade9c",
+          "size": 207632,
+          "width": 801,
+          "height": 1200
+        },
+        {
+          "id": 1648154,
+          "hash": "d738c28540c201392a7679e98dd3f8682a2c471e",
+          "size": 321715,
+          "width": 801,
+          "height": 1200
+        }
+      ]
+    },
+    "8e782c6e-c4b4-4001-add1-8e2d31402f9d": {
+      "name": "cana-normal-12",
+      "images": [
+        {
+          "id": 1648155,
+          "hash": "73d19edd22830edc878e5f5d217f6bf00c832295",
+          "size": 227436,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648156,
+          "hash": "496e594850abc32b8af194a0c5bedaa1edbfd365",
+          "size": 242281,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648157,
+          "hash": "3682edf2cb4a1d284e384d009855f30f90ff3665",
+          "size": 138693,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648158,
+          "hash": "e5b66559c469b5eed84b66510c8940d64d557c08",
+          "size": 138351,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648159,
+          "hash": "a7da1c2199de26c727f8bb35ae7575763102a5f1",
+          "size": 123366,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648160,
+          "hash": "dd9019d3c5594d15fdf56062f8beca18e8208e13",
+          "size": 177309,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648161,
+          "hash": "1ed29a32070a2f8cf58f425692e8a428ee47e3a8",
+          "size": 166760,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648162,
+          "hash": "614e4114840aa6fe95069b128eab770856cf7479",
+          "size": 139326,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648163,
+          "hash": "5a62af0dcfbdcd3ddab767d3a1dca5902953eee0",
+          "size": 119660,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648164,
+          "hash": "074ff98a9fac2857eabbe0f30fcaff2f1dbc0857",
+          "size": 195920,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648165,
+          "hash": "f0889028c034b07e3aea0b7f9f29fd33409ab3dc",
+          "size": 134431,
+          "width": 683,
+          "height": 1024
+        },
+        {
+          "id": 1648166,
+          "hash": "68bd5c9d35a865c06457979d4264c92dfae01276",
+          "size": 116914,
+          "width": 683,
+          "height": 1024
+        }
+      ]
+    },
+    "7b17c7db-4e59-49d1-8902-516b6201ad1b": {
+      "name": "cana-normal-13",
+      "images": [
+        {
+          "id": 1648167,
+          "hash": "baf9644464c4172fd260c54826a9797ebbbcdc71",
+          "size": 199598,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648168,
+          "hash": "99cdb7b0c5c5f97f2d5d7a214fd8ccdeb18094a6",
+          "size": 228958,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648169,
+          "hash": "b967ce3b1e2fdab25d38fb7b9bdefda2e08fef68",
+          "size": 121782,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648170,
+          "hash": "f59e49594341ca5593df501eb158403b2513e721",
+          "size": 128820,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648171,
+          "hash": "1024c8e9fdb9ecea0fc3bfed1e00fb3014b6f1c9",
+          "size": 246732,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648172,
+          "hash": "17b9122041b06915b5125c08b1ea427c273823ff",
+          "size": 141907,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648173,
+          "hash": "7f54d3b241913e433af1a6dc898904906cc07d4f",
+          "size": 171909,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648174,
+          "hash": "dc69b3784d015e4167010c5ee8a04c686185ca69",
+          "size": 133544,
+          "width": 853,
+          "height": 1280
+        }
+      ]
+    },
+    "523441a9-16cb-422d-9085-5478a200c647": {
+      "name": "cana-normal-14",
+      "images": [
+        {
+          "id": 1648175,
+          "hash": "bc66c41cc7676400a1d6434a254f860ac79ab185",
+          "size": 99249,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648176,
+          "hash": "4b2798e76e1e3957330e8e2869aa27bf18e69713",
+          "size": 160879,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648177,
+          "hash": "d06c1fb74f11ddea2e7bdaf1cfaa088a82cd98cc",
+          "size": 139774,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648178,
+          "hash": "07ab899b85c323f6d02e202127fda96b6467c3fb",
+          "size": 80019,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648179,
+          "hash": "a3645fc96d59d08fc41315f7db73ffb0b65f61c8",
+          "size": 131952,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648180,
+          "hash": "fa7f60e14eb609c0d209fe6808ef16602909484f",
+          "size": 146665,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648181,
+          "hash": "eeb22d0c3d5c1441d0d26174871281e277f41dc6",
+          "size": 157619,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648182,
+          "hash": "dc049b3860dce95a29f9f40516856c22a7d3a58a",
+          "size": 124720,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648183,
+          "hash": "85d25a9c25793b60d762ec378ad1ec5aa9edb588",
+          "size": 137259,
+          "width": 682,
+          "height": 1024
+        },
+        {
+          "id": 1648184,
+          "hash": "8e0c64d63a934e78033e9e3c7b63fc6e5fe37d43",
+          "size": 81646,
+          "width": 682,
+          "height": 1024
+        }
+      ]
+    },
+    "45b3253e-9aca-4248-a3ab-4c4fdcc6d0cc": {
+      "name": "cana-normal-15",
+      "images": [
+        {
+          "id": 1648185,
+          "hash": "cce2e5e3592399a3a55d8760b9466b01eeb7bede",
+          "size": 165489,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648186,
+          "hash": "90f8ae4e6cfc5c4a75aad063445db1b3082ea613",
+          "size": 150734,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648187,
+          "hash": "d94c1eeff84594be2639c157bf4b48cbd2c95c6f",
+          "size": 149765,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648188,
+          "hash": "620559e466d554fad1a7892e5255289b281fdd84",
+          "size": 153032,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648189,
+          "hash": "2aeb00c838cdd272147ba44cb8bb2d45ee986184",
+          "size": 146206,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648190,
+          "hash": "941807df6944e4865001c0b690392d638510c5b7",
+          "size": 140048,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648191,
+          "hash": "7503c06dafbc743f016bdc4cd99dcc1dfdbad4f4",
+          "size": 134422,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648192,
+          "hash": "dbfa6e048a5cae5d267e63a5e44440d9f3c37d7d",
+          "size": 126284,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648193,
+          "hash": "ef2d2b79e55b39ee9cb8e25090f78d0bb43638bb",
+          "size": 165596,
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "id": 1648194,
+          "hash": "b605b009c307fd034489632a0b935d27c07a539f",
+          "size": 169693,
+          "width": 853,
+          "height": 1280
+        }
+      ]
+    }
+  },
   "editor": {
-    "recentImages": []
+    "recentImages": [
+      {
+        "type": "gallery",
+        "mimeType": "image/jpeg",
+        "galleryId": "e62706d4-0918-4ba5-ac4e-e8842b08fb73",
+        "url": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648147",
+        "imageId": 1648147
+      },
+      {
+        "type": "gallery",
+        "mimeType": "image/jpeg",
+        "galleryId": "349df617-4375-4f58-88b8-df0a3ea18550",
+        "url": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647712",
+        "imageId": 1647712
+      }
+    ]
   }
 }
