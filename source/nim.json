@@ -307,7 +307,7 @@
       },
       {
         "say": {
-          "label": "<p>Are you hard already?</p>",
+          "label": "<p><span style=\"color: #f48fb1\">Are you hard already?</span></p>",
           "mode": "instant"
         }
       },
@@ -344,7 +344,7 @@
                 },
                 {
                   "say": {
-                    "label": "<p>Then get you cock out and prepare to stroke to the beat.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">Then get you cock out and prepare to stroke to the beat.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
@@ -592,7 +592,7 @@
       },
       {
         "say": {
-          "label": "<p>Let&#39;s begin.</p>",
+          "label": "<p><span style=\"color: #f48fb1\">Let&#39;s begin.</span></p>",
           "mode": "autoplay",
           "allowSkip": true
         }
@@ -1444,13 +1444,7 @@
       },
       {
         "say": {
-          "label": "<p>When enabled only cbt related tasks are used.</p>",
-          "mode": "instant"
-        }
-      },
-      {
-        "say": {
-          "label": "<p>This setting only works if cbt is enabled as well.</p>",
+          "label": "<p>When enabled only cbt related tasks are used.</p><p>This setting only works if cbt is enabled as well.</p><p>You still get to cum at the end.</p>",
           "mode": "instant"
         }
       },
@@ -2494,13 +2488,7 @@
       },
       {
         "say": {
-          "label": "<p>Enabling auto play replaces the players manual decision with an automatic AI decision.</p>",
-          "mode": "instant"
-        }
-      },
-      {
-        "say": {
-          "label": "<p>This enables the tease to be played &quot;Hands Free&quot;.</p>",
+          "label": "<p>Enabling auto play replaces some of the players manual decisions with automatic AI decisions.</p><p>Replaced/Automated decisions are for example:</p><p>⋅ Taking matches</p><p>⋅ Predicting dice rolls</p><p>⋅ Predicting coin flips</p><p>This enables the tease to be played more &quot;hands free&quot;.</p>",
           "mode": "instant"
         }
       },
@@ -2726,6 +2714,12 @@
       {
         "say": {
           "label": "<p><span style=\"color: #ffeb3b\"><u><strong>Auto Play</strong></u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>Determines the skill level of the AI replacing the player when taking matches.</p>",
           "mode": "instant"
         }
       },
@@ -3782,6 +3776,32 @@
     ],
     "newTurn": [
       {
+        "notification.create": {
+          "id": "edge",
+          "buttonCommands": [
+            {
+              "goto": {
+                "target": "edge"
+              }
+            }
+          ],
+          "buttonLabel": "Edge"
+        }
+      },
+      {
+        "notification.create": {
+          "id": "cum",
+          "buttonCommands": [
+            {
+              "goto": {
+                "target": "oops"
+              }
+            }
+          ],
+          "buttonLabel": "Cum"
+        }
+      },
+      {
         "timer": {
           "duration": "1s",
           "style": "hidden"
@@ -3911,7 +3931,7 @@
             },
             {
               "say": {
-                "label": "<p><eval>&quot;She took &quot; + (game.lastMatches - game.currentMatches) + (game.lastMatches - game.currentMatches === 1 ? &quot; match.&quot; : &quot; matches.&quot;)</eval></p>",
+                "label": "<p><span style=\"color: #f48fb1\"><eval>&quot;I will take &quot; + (game.lastMatches - game.currentMatches) + (game.lastMatches - game.currentMatches === 1 ? &quot; match.&quot; : &quot; matches.&quot;)</eval></span></p>",
                 "mode": "autoplay",
                 "allowSkip": true
               }
@@ -4643,20 +4663,376 @@
           "condition": "game.currentMatches <= 0",
           "commands": [
             {
+              "eval": {
+                "script": "Notification.get(\"cum\").remove();\r\nNotification.get(\"edge\").remove();"
+              }
+            },
+            {
               "if": {
                 "condition": "game.isPlayerTurn",
                 "commands": [
                   {
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647718"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648144"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
                     "say": {
-                      "label": "<p>AI WON</p>"
+                      "label": "<p><span style=\"color: #f48fb1\">I won!</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #f48fb1\">Too bad for you!</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #f48fb1\">Do you want to play another round?</span></p><p><span style=\"color: #f48fb1\">If not this day will end with a frustrated and denied cock for you.</span></p>",
+                      "mode": "instant"
+                    }
+                  },
+                  {
+                    "choice": {
+                      "options": [
+                        {
+                          "label": "Yes ✔",
+                          "commands": [
+                            {
+                              "audio.play": {
+                                "locator": "file:menu-button-click.mp3"
+                              }
+                            },
+                            {
+                              "timer": {
+                                "duration": "0.1s"
+                              }
+                            },
+                            {
+                              "say": {
+                                "label": "<p><span style=\"color: #f48fb1\">Let&#39;s see who begins.</span></p>"
+                              }
+                            },
+                            {
+                              "goto": {
+                                "target": "start-game"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "No ❌",
+                          "commands": [
+                            {
+                              "audio.play": {
+                                "locator": "file:menu-button-click.mp3"
+                              }
+                            },
+                            {
+                              "timer": {
+                                "duration": "0.1s"
+                              }
+                            },
+                            {
+                              "if": {
+                                "condition": "settings.hentaiEnabled",
+                                "commands": [
+                                  {
+                                    "image": {
+                                      "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1648048"
+                                    }
+                                  }
+                                ],
+                                "elseCommands": [
+                                  {
+                                    "image": {
+                                      "locator": "gallery:e67734a3-074a-4f38-ba5f-9cca8ae34501/1648078"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "say": {
+                                "label": "<p><span style=\"color: #f48fb1\">I certainly had fun.</span></p>"
+                              }
+                            },
+                            {
+                              "say": {
+                                "label": "<p><span style=\"color: #f48fb1\">I hope to see you again, so you can get your share of fun as well.</span></p>"
+                              }
+                            },
+                            {
+                              "end": {}
+                            }
+                          ]
+                        }
+                      ]
                     }
                   }
                 ],
                 "elseCommands": [
                   {
-                    "say": {
-                      "label": "<p>PLAYER  WON</p>"
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1648048"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:d0d6b754-ddfc-4f14-919e-c8f150817fe1/1648120"
+                          }
+                        }
+                      ]
                     }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Congratulations! You won!</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">This means you get to cum.</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Get ready!</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647700"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:43f34b03-85c0-45e0-a16c-5d7c6d9dfa81/1648085"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "audio.play": {
+                      "locator": "file:no-120.mp3",
+                      "id": "beat"
+                    }
+                  },
+                  {
+                    "timer": {
+                      "duration": "10s",
+                      "style": "hidden"
+                    }
+                  },
+                  {
+                    "eval": {
+                      "script": "Sound.get(\"beat\").stop();"
+                    }
+                  },
+                  {
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647716"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:43f34b03-85c0-45e0-a16c-5d7c6d9dfa81/1648084"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Faster!</span></p>",
+                      "mode": "instant"
+                    }
+                  },
+                  {
+                    "audio.play": {
+                      "locator": "file:no-210.mp3",
+                      "id": "beat"
+                    }
+                  },
+                  {
+                    "timer": {
+                      "duration": "20s",
+                      "style": "hidden"
+                    }
+                  },
+                  {
+                    "eval": {
+                      "script": "Sound.get(\"beat\").stop();"
+                    }
+                  },
+                  {
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647703"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:43f34b03-85c0-45e0-a16c-5d7c6d9dfa81/1648083"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Hold out a bit longer!</span></p>",
+                      "mode": "instant"
+                    }
+                  },
+                  {
+                    "audio.play": {
+                      "locator": "file:no-300.mp3",
+                      "id": "beat"
+                    }
+                  },
+                  {
+                    "timer": {
+                      "duration": "30s",
+                      "style": "hidden"
+                    }
+                  },
+                  {
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647709"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:43f34b03-85c0-45e0-a16c-5d7c6d9dfa81/1648088"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ffee58\"><u><strong>Edge</strong></u></span></p>",
+                      "mode": "pause"
+                    }
+                  },
+                  {
+                    "eval": {
+                      "script": "Sound.get(\"beat\").stop();"
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Ride it....</span></p>",
+                      "mode": "instant"
+                    }
+                  },
+                  {
+                    "timer": {
+                      "duration": "10s",
+                      "style": "secret"
+                    }
+                  },
+                  {
+                    "if": {
+                      "condition": "settings.hentaiEnabled",
+                      "commands": [
+                        {
+                          "image": {
+                            "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647708"
+                          }
+                        }
+                      ],
+                      "elseCommands": [
+                        {
+                          "image": {
+                            "locator": "gallery:43f34b03-85c0-45e0-a16c-5d7c6d9dfa81/1648087"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Now cum!</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ef9a9a\">Get every last drop out!</span></p>",
+                      "mode": "autoplay",
+                      "allowSkip": true
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #ffee58\"><u><strong>Enter/Click To Continue</strong></u></span></p>",
+                      "mode": "pause"
+                    }
+                  },
+                  {
+                    "say": {
+                      "label": "<p><span style=\"color: #f48fb1\">I really enjoyed that. Hope to see you again.</span></p>"
+                    }
+                  },
+                  {
+                    "end": {}
                   }
                 ]
               }
@@ -4694,7 +5070,7 @@
       },
       {
         "say": {
-          "label": "<p>Heads or tails?</p>",
+          "label": "<p><span style=\"color: #f48fb1\">Heads or tails?</span></p>",
           "mode": "instant"
         }
       },
@@ -4709,7 +5085,7 @@
             },
             {
               "say": {
-                "label": "<p>Heads? Let&#39;s see...</p>",
+                "label": "<p><span style=\"color: #f48fb1\">Heads? Let&#39;s see...</span></p>",
                 "mode": "autoplay",
                 "allowSkip": true
               }
@@ -4740,7 +5116,7 @@
                       },
                       {
                         "say": {
-                          "label": "<p>Heads? Let&#39;s see...</p>",
+                          "label": "<p><span style=\"color: #f48fb1\">Heads? Let&#39;s see...</span></p>",
                           "mode": "autoplay",
                           "allowSkip": true
                         }
@@ -4768,7 +5144,7 @@
                       },
                       {
                         "say": {
-                          "label": "<p>Tails? Let&#39;s see...</p>",
+                          "label": "<p><span style=\"color: #f48fb1\">Tails? Let&#39;s see...</span></p>",
                           "mode": "autoplay",
                           "allowSkip": true
                         }
@@ -4837,7 +5213,7 @@
       },
       {
         "say": {
-          "label": "<p><eval>game.isPlayerTurn ? &quot;You go first.&quot; : &quot;I will start.&quot;</eval></p>",
+          "label": "<p><span style=\"color: #f48fb1\"><eval>game.isPlayerTurn ? &quot;You go first.&quot; : &quot;I will start.&quot;</eval></span></p>",
           "mode": "autoplay",
           "allowSkip": true
         }
@@ -4875,14 +5251,14 @@
       },
       {
         "say": {
-          "label": "<p>Good to see you!</p>",
+          "label": "<p><span style=\"color: #f48fb1\">Good to see you!</span></p>",
           "mode": "autoplay",
           "allowSkip": true
         }
       },
       {
         "say": {
-          "label": "<p>Do you want me to explain what we are going to do today?</p>",
+          "label": "<p><span style=\"color: #f48fb1\">Do you want me to explain what we are going to do today?</span></p>",
           "mode": "instant"
         }
       },
@@ -4904,7 +5280,7 @@
                 },
                 {
                   "say": {
-                    "label": "<p>We are going to play a game of Nim.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">We are going to play a game of Nim.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
@@ -4916,7 +5292,7 @@
                 },
                 {
                   "say": {
-                    "label": "<p>There will be matches on the table.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">There will be matches on the table.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
@@ -4928,7 +5304,7 @@
                 },
                 {
                   "say": {
-                    "label": "<p>We will take turns taking away one to three matches.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">We will take turns taking away one to three matches.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
@@ -4940,7 +5316,7 @@
                 },
                 {
                   "say": {
-                    "label": "<p>Whoever takes the last match wins.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">Whoever takes the last match wins.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
@@ -4966,35 +5342,35 @@
                 },
                 {
                   "say": {
-                    "label": "<p>After each turn I will tease you a bit.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">After each turn I will tease you a bit.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
                 },
                 {
                   "say": {
-                    "label": "<p>This will prepare you for the grand finale.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">This will prepare you for the grand finale.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
                 },
                 {
                   "say": {
-                    "label": "<p>If you win I will let you cum.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">If you win I will let you cum.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
                 },
                 {
                   "say": {
-                    "label": "<p>If you lose you get denied or we play another round.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">If you lose you get denied or we play another round.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
                 },
                 {
                   "say": {
-                    "label": "<p>Maybe you are victorious next time.</p>",
+                    "label": "<p><span style=\"color: #f48fb1\">Maybe you are victorious next time.</span></p>",
                     "mode": "autoplay",
                     "allowSkip": true
                   }
@@ -5024,10 +5400,214 @@
           "target": "start-warmup"
         }
       }
+    ],
+    "oops": [
+      {
+        "eval": {
+          "script": "this.Notification.get(\"edge\").remove();"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1648050"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "gallery:500cbe8e-cd98-4c7e-8d24-f5e4ecfb5026/1648098"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #ffee58\"><u><strong>Ruin that orgasm!</strong></u></span></p>",
+          "mode": "pause"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #f48fb1\">Since you already came we should end out little game.</span></p>"
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #f48fb1\">Or do you want to continue?</span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Yes ✔",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p><span style=\"color: #f48fb1\">Alright!</span></p>"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "newTurn"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "No ❌",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p><span style=\"color: #f48fb1\">I hope we can finish this properly another time.</span></p>"
+                  }
+                },
+                {
+                  "say": {
+                    "label": "<p><span style=\"color: #f48fb1\">See you around.</span></p>"
+                  }
+                },
+                {
+                  "end": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "edge": [
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1648050"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "gallery:500cbe8e-cd98-4c7e-8d24-f5e4ecfb5026/1648098"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "say": {
+          "label": "<p><span style=\"color: #f48fb1\">Hold it...</span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "timer": {
+          "duration": "5s-15s",
+          "style": "secret"
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.hentaiEnabled",
+          "commands": [
+            {
+              "image": {
+                "locator": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647699"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "image": {
+                "locator": "gallery:e62706d4-0918-4ba5-ac4e-e8842b08fb73/1648147"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "if": {
+          "condition": "settings.cbtEnabled",
+          "commands": [
+            {
+              "say": {
+                "label": "<p><span style=\"color: #f48fb1\">Slap your balls to the beat.</span></p>",
+                "mode": "autoplay",
+                "allowSkip": true
+              }
+            },
+            {
+              "audio.play": {
+                "locator": "file:no-300.mp3",
+                "id": "beat"
+              }
+            },
+            {
+              "timer": {
+                "duration": "15s",
+                "style": "secret"
+              }
+            },
+            {
+              "eval": {
+                "script": "Sound.get(\"beat\").stop();"
+              }
+            }
+          ],
+          "elseCommands": [
+            {
+              "say": {
+                "label": "<p><span style=\"color: #f48fb1\">Calm down a bit before we continue.</span></p>",
+                "mode": "instant"
+              }
+            },
+            {
+              "timer": {
+                "duration": "15s"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "goto": {
+          "target": "newTurn"
+        }
+      }
     ]
   },
   "modules": {
-    "audio": {}
+    "audio": {},
+    "notification": {}
   },
   "files": {
     "menu-button-click.mp3": {
@@ -5349,7 +5929,7 @@
       "height": 778
     }
   },
-  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: false,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 4 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n\r\nvar game = {\r\n  maxMatches: 15,\r\n  currentMatches: 15,\r\n  currentSet: 0,\r\n  lastMatches: 15,\r\n  lastSet: 0,\r\n  isPlayerTurn: true,\r\n  handleTurn: function(count) {\r\n    game.lastMatches = game.currentMatches;\r\n    game.lastSet = game.currentSet;\r\n\r\n    for (var i = 1; i < count + 1; i++) {\r\n      console.info(\"game\", \"handleTurn\", \"removing match\", i, \"of\", count);\r\n\r\n      game.currentMatches -= 1;\r\n\r\n      if (game.currentMatches % 15 === 0 && game.currentSet > 0) {\r\n        game.currentSet -= 1;\r\n      }\r\n    }\r\n\r\n    if (game.currentMatches <= 0) {\r\n      game.currentMatches === 0;\r\n    }\r\n\r\n    game.isPlayerTurn = !game.isPlayerTurn;\r\n\r\n    console.log(\"game\", \"handleTurn\", game);\r\n\r\n    return game.currentMatches === 0;\r\n  },\r\n  getCurrentSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.currentSet * 15);\r\n  },\r\n  getCurrentSetLastMatches: function () {\r\n    return game.lastMatches - (game.currentSet * 15);\r\n  },\r\n  getLastSetLastMatches: function () {\r\n    return game.lastMatches - (game.lastSet * 15);\r\n  },\r\n  getLastSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.lastSet * 15);\r\n  },\r\n};\r\n\r\nvar ai = {\r\n  performPlayerTurn: function () {\r\n    console.log(\"ai\", \"performPlayerTurn\");\r\n\r\n    return ai.performTurn(settings.autoPlayDifficulty);\r\n  },\r\n  performAiTurn: function () {\r\n    console.log(\"ai\", \"performAiTurn\");\r\n\r\n    return ai.performTurn(settings.difficulty);\r\n  },\r\n  performTurn: function (difficulty) {\r\n    console.log(\"ai\", \"performTurn\", \"difficulty:\", difficulty);\r\n    var count = 0;\r\n\r\n    switch(difficulty){\r\n      case  0:\r\n        count = ai.performVeryEasyTurn();\r\n        break;\r\n      case  1:\r\n         count = ai.performVeryEasyOrHardTurnByChance(75);\r\n        break;\r\n      case  2:\r\n         count = ai.performVeryEasyOrHardTurnByChance(50);\r\n         break;\r\n      case  3:\r\n         count = ai.performVeryEasyOrHardTurnByChance(25);\r\n         break;\r\n      case  4:\r\n         count = ai.performVeryHardTurn();\r\n        break;\r\n    }\r\n\r\n    return count > game.currentMatches ? game.currentMatches : count;\r\n  },\r\n  performVeryEasyTurn: function () {\r\n    console.log(\"ai\", \"performVeryEasyTurn\");\r\n\r\n    return utils.getRandomInt(1, 3);\r\n  },\r\n  performVeryHardTurn: function () {\r\n    console.log(\"ai\", \"performVeryHardTurn\");\r\n    \r\n    var matches = game.currentMatches % 4;\r\n    // if matches is 0, ai will lose if player does not missplay any further\r\n    return matches === 0 ? ai.performVeryEasyTurn() : matches;\r\n  },\r\n  performVeryEasyOrHardTurnByChance: function (chanceForVeryEasy) {\r\n    console.log(\"ai\", \"performVeryEasyOrHardTurnByChance\");\r\n\r\n    if(utils.getRandomInt(1, 100) >= chanceForVeryEasy) {\r\n      return ai.performVeryEasyTurn();\r\n    }\r\n\r\n    return ai.performVeryHardTurn();\r\n  }\r\n};\r\n\r\nvar coin = {\r\n  prediction: true,\r\n  lastResult: true,\r\n  flip: function () {\r\n    coin.lastResult = utils.getRandomInt(1, 2) === 1;\r\n    \r\n    return coin.lastResult;\r\n  }\r\n};\r\n\r\nvar utils = {\r\n  getRandomInt: function(min, max) {\r\n    return Math.floor((Math.random() * max) + min);\r\n  },\r\n  padEnd: function(value, char, count) {\r\n    \r\n    // where the fk is padEnd on the string object\r\n    for(var i = 0; i < count; i++){\r\n      value += char;\r\n    }\r\n\r\n    return value;\r\n  }\r\n};",
+  "init": "var settings = {\r\n  // 0 = 15\r\n  // 1 = 30\r\n  // 2 = 45\r\n  gameLength: 0,\r\n  hentaiEnabled: false,\r\n  cbtEnabled: false,\r\n  onlyCbtEnabled: false,\r\n  // 0 = very easy\r\n  // 1 = easy\r\n  // 2 = medium\r\n  // 3 = hard\r\n  // 4 = very hard\r\n  difficulty: 2,\r\n  autoPlayEnabled: false,\r\n  autoPlayDifficulty: 2\r\n};\r\n\r\nvar slideShow = {\r\n  imagePageStack: [],\r\n  running: false\r\n};\r\n\r\nvar game = {\r\n  maxMatches: 15,\r\n  currentMatches: 15,\r\n  currentSet: 0,\r\n  lastMatches: 15,\r\n  lastSet: 0,\r\n  isPlayerTurn: true,\r\n  handleTurn: function(count) {\r\n    game.lastMatches = game.currentMatches;\r\n    game.lastSet = game.currentSet;\r\n\r\n    for (var i = 1; i < count + 1; i++) {\r\n      console.info(\"game\", \"handleTurn\", \"removing match\", i, \"of\", count);\r\n\r\n      game.currentMatches -= 1;\r\n\r\n      if (game.currentMatches % 15 === 0 && game.currentSet > 0) {\r\n        game.currentSet -= 1;\r\n      }\r\n    }\r\n\r\n    if (game.currentMatches <= 0) {\r\n      game.currentMatches === 0;\r\n    }\r\n\r\n    game.isPlayerTurn = !game.isPlayerTurn;\r\n\r\n    console.log(\"game\", \"handleTurn\", game);\r\n\r\n    return game.currentMatches === 0;\r\n  },\r\n  getCurrentSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.currentSet * 15);\r\n  },\r\n  getCurrentSetLastMatches: function () {\r\n    return game.lastMatches - (game.currentSet * 15);\r\n  },\r\n  getLastSetLastMatches: function () {\r\n    return game.lastMatches - (game.lastSet * 15);\r\n  },\r\n  getLastSetCurrentMatches: function () {\r\n    return game.currentMatches - (game.lastSet * 15);\r\n  },\r\n};\r\n\r\nvar ai = {\r\n  performPlayerTurn: function () {\r\n    console.log(\"ai\", \"performPlayerTurn\");\r\n\r\n    return ai.performTurn(settings.autoPlayDifficulty);\r\n  },\r\n  performAiTurn: function () {\r\n    console.log(\"ai\", \"performAiTurn\");\r\n\r\n    return ai.performTurn(settings.difficulty);\r\n  },\r\n  performTurn: function (difficulty) {\r\n    console.log(\"ai\", \"performTurn\", \"difficulty:\", difficulty);\r\n    var count = 0;\r\n\r\n    switch(difficulty){\r\n      case  0:\r\n        count = ai.performVeryEasyTurn();\r\n        break;\r\n      case  1:\r\n         count = ai.performVeryEasyOrHardTurnByChance(75);\r\n        break;\r\n      case  2:\r\n         count = ai.performVeryEasyOrHardTurnByChance(50);\r\n         break;\r\n      case  3:\r\n         count = ai.performVeryEasyOrHardTurnByChance(25);\r\n         break;\r\n      case  4:\r\n         count = ai.performVeryHardTurn();\r\n        break;\r\n    }\r\n\r\n    return count > game.currentMatches ? game.currentMatches : count;\r\n  },\r\n  performVeryEasyTurn: function () {\r\n    console.log(\"ai\", \"performVeryEasyTurn\");\r\n\r\n    return utils.getRandomInt(1, 3);\r\n  },\r\n  performVeryHardTurn: function () {\r\n    console.log(\"ai\", \"performVeryHardTurn\");\r\n    \r\n    var matches = game.currentMatches % 4;\r\n    // if matches is 0, ai will lose if player does not missplay any further\r\n    return matches === 0 ? ai.performVeryEasyTurn() : matches;\r\n  },\r\n  performVeryEasyOrHardTurnByChance: function (chanceForVeryEasy) {\r\n    console.log(\"ai\", \"performVeryEasyOrHardTurnByChance\");\r\n\r\n    if(utils.getRandomInt(1, 100) <= chanceForVeryEasy) {\r\n      return ai.performVeryEasyTurn();\r\n    }\r\n\r\n    return ai.performVeryHardTurn();\r\n  }\r\n};\r\n\r\nvar coin = {\r\n  prediction: true,\r\n  lastResult: true,\r\n  flip: function () {\r\n    coin.lastResult = utils.getRandomInt(1, 2) === 1;\r\n    \r\n    return coin.lastResult;\r\n  }\r\n};\r\n\r\nvar utils = {\r\n  getRandomInt: function(min, max) {\r\n    return Math.floor((Math.random() * max) + min);\r\n  },\r\n  padEnd: function(value, char, count) {\r\n    \r\n    // where the fk is padEnd on the string object\r\n    for(var i = 0; i < count; i++){\r\n      value += char;\r\n    }\r\n\r\n    return value;\r\n  }\r\n};",
   "galleries": {
     "349df617-4375-4f58-88b8-df0a3ea18550": {
       "name": "cana-hentai",
@@ -5535,6 +6115,41 @@
           "size": 53467,
           "width": 687,
           "height": 687
+        },
+        {
+          "id": 1650609,
+          "hash": "0891a9a40fddacf937c5247b7669ddfaef3838b5",
+          "size": 34258,
+          "width": 395,
+          "height": 480
+        },
+        {
+          "id": 1650610,
+          "hash": "27b49bd2e183d92395c644b6944cabcc04daca89",
+          "size": 65652,
+          "width": 528,
+          "height": 600
+        },
+        {
+          "id": 1650611,
+          "hash": "a887db54a4fba92ea2954e7851b850b2f9f6d278",
+          "size": 113359,
+          "width": 850,
+          "height": 618
+        },
+        {
+          "id": 1650612,
+          "hash": "00cf1df1d3aec3d148fdd3c4c6bb9dcdc7edce80",
+          "size": 289293,
+          "width": 620,
+          "height": 876
+        },
+        {
+          "id": 1650613,
+          "hash": "d4d391610ac617a6dbc74fa5b1b1d8a2957c92fc",
+          "size": 174400,
+          "width": 850,
+          "height": 1204
         }
       ]
     },
@@ -6578,9 +7193,37 @@
       {
         "type": "gallery",
         "mimeType": "image/jpeg",
+        "galleryId": "43f34b03-85c0-45e0-a16c-5d7c6d9dfa81",
+        "url": "gallery:43f34b03-85c0-45e0-a16c-5d7c6d9dfa81/1648090",
+        "imageId": 1648090
+      },
+      {
+        "type": "gallery",
+        "mimeType": "image/jpeg",
         "galleryId": "349df617-4375-4f58-88b8-df0a3ea18550",
-        "url": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647712",
-        "imageId": 1647712
+        "url": "gallery:349df617-4375-4f58-88b8-df0a3ea18550/1647699",
+        "imageId": 1647699
+      },
+      {
+        "type": "gallery",
+        "mimeType": "image/jpeg",
+        "galleryId": "500cbe8e-cd98-4c7e-8d24-f5e4ecfb5026",
+        "url": "gallery:500cbe8e-cd98-4c7e-8d24-f5e4ecfb5026/1648098",
+        "imageId": 1648098
+      },
+      {
+        "type": "gallery",
+        "mimeType": "image/jpeg",
+        "galleryId": "d0d6b754-ddfc-4f14-919e-c8f150817fe1",
+        "url": "gallery:d0d6b754-ddfc-4f14-919e-c8f150817fe1/1648120",
+        "imageId": 1648120
+      },
+      {
+        "type": "gallery",
+        "mimeType": "image/jpeg",
+        "galleryId": "e67734a3-074a-4f38-ba5f-9cca8ae34501",
+        "url": "gallery:e67734a3-074a-4f38-ba5f-9cca8ae34501/1648078",
+        "imageId": 1648078
       }
     ]
   }

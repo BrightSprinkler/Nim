@@ -116,7 +116,7 @@ var ai = {
   performVeryEasyOrHardTurnByChance: function (chanceForVeryEasy) {
     console.log("ai", "performVeryEasyOrHardTurnByChance");
 
-    if(utils.getRandomInt(1, 100) >= chanceForVeryEasy) {
+    if(utils.getRandomInt(1, 100) <= chanceForVeryEasy) {
       return ai.performVeryEasyTurn();
     }
 

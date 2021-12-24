@@ -105,8 +105,9 @@ If you edge or cum when not allowed to something has to happen.
 ### Edging
 
 * Abort current task
-* Wait some time to cool down
-* If Cbt is enabled, maybe some cbt tasks
+* Hold edge
+* Timeout, if cbt is enabled -> cbt task during timeout
+* Resume game
 
 ### Cumming
 
@@ -208,9 +209,18 @@ I will start then. OR You go first.
 
 ### Denial
 
+* nothing happens
+* Game over
+
 ### Orgasm
 
-### Accidental Orgasm
+* Stroking
+* Faster and faster
+* Edge
+* Hold
+* Cum
+
+### 
 
 ### Match Tasks
 
