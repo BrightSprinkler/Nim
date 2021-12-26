@@ -6,12 +6,19 @@ var settings = {
   hentaiEnabled: false,
   cbtEnabled: false,
   onlyCbtEnabled: false,
+  // fuck enums, all my homies hat enums, or maps, or dictionaries
   // 0 = very easy
   // 1 = easy
   // 2 = medium
   // 3 = hard
   // 4 = very hard
   difficulty: 2,
+  // 0 = guranteed
+  // 1 = high
+  // 2 = balanced
+  // 3 = low
+  // 4 = never
+  orgasmChance: 2,
   autoPlayEnabled: false,
   autoPlayDifficulty: 2
 };
@@ -28,6 +35,7 @@ var game = {
   lastMatches: 15,
   lastSet: 0,
   isPlayerTurn: true,
+  wonGames: 0,
   handleTurn: function(count) {
     game.lastMatches = game.currentMatches;
     game.lastSet = game.currentSet;
@@ -44,6 +52,10 @@ var game = {
 
     if (game.currentMatches <= 0) {
       game.currentMatches === 0;
+    }
+
+    if (game.currentMatches === 0 && game.isPlayerTurn) {
+      game.wonGames += 1;
     }
 
     game.isPlayerTurn = !game.isPlayerTurn;
@@ -64,6 +76,30 @@ var game = {
   getLastSetCurrentMatches: function () {
     return game.currentMatches - (game.lastSet * 15);
   },
+  getOrgasmChance: function() {
+    var chance = 0;
+
+    switch(settings.orgasmChance){
+      case  0:
+        chance = 100; // always
+        break;
+      case  1:
+         chance = 50 + (game.wonGames * 25); // after 2 won games 100 %
+        break;
+      case  2:
+         chance = 20 + (game.wonGames * 20); // after 4 won games 100 %
+         break;
+      case  3:
+         chance = 20 + (game.wonGames * 10); // after 8 won games 100 %
+         break;
+      case  4:
+         chance = game.wonGames; // after 100 won games 100 %
+        break;
+    }
+
+    console.log("game", "getOrgasmChance", chance);
+    return chance;
+  }
 };
 
 var ai = {

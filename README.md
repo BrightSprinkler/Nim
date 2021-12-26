@@ -121,6 +121,7 @@ Mingames:
 - Split
 -- A number between X and Y, X is action one and Y is action two, e.g. X edges, need to be hold for Y seconds 
 - Fap routlett
+- Task, then rolling dice modificator (1 = x0.25, 6 = x3)
 
 Variation:
 - Bpm
@@ -339,3 +340,5 @@ To simplify dialogues both characters are going to have the same name: Cana
 * https://www.onlinelabels.com/clip-art/Hand-Silhouette-123714
 * http://www.yuribs.com/pics/eurocoins/GER1_1,00.png
 * http://www.yuribs.com/pics/eurocoins/EUR2_1,00_2007.png
+* https://www.onlinelabels.com/clip-art/Splash-113950
+* https://www.onlinelabels.com/clip-art/Rope-125830
