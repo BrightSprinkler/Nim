@@ -114,6 +114,9 @@ If you edge or cum when not allowed to something has to happen.
 * End tease with ruin
 
 ## Tasks
+
+![Fields](https://raw.githubusercontent.com/BrightSprinkler/Nim/main/source/images/readme/TaskDifficultySpread.png)
+
 Mingames:
 - RL GL
 - Dice
@@ -227,39 +230,188 @@ I will start then. OR You go first.
 
 #### 1
 
+Dice Modifier
+
 ##### Base
 
+stroke at 60 bpm for 90 seconds
+
+roll dice modify stroking time:
+1 - * 0.5 (45 sec)
+2 - * 0.75 (67.5 sec)
+3 - * 1 (90 sec)
+4 - * 1.5 (135 sec)
+5 - * 1.75 (157.5 sec)
+6 - * 2 (180 sec)
+
 ##### CBT
+
+punch balls at 60 bpm for 90 seconds
+
+roll dice modify punching time:
+1 - * 0.5 (45 sec)
+2 - * 0.75 (67.5 sec)
+3 - * 1 (90 sec)
+4 - * 1.5 (135 sec)
+5 - * 1.75 (157.5 sec)
+6 - * 2 (180 sec)
 
 #### 2
 
+Coin Flip
+
+
 ##### Base
 
+Flip Coin
+
+If heads -> stroke head
+If tails -> stroke shaft
+
+Stroke at 90 bpm for 120 seconds  
+
 ##### CBT
+
+Flip Coin
+
+If heads -> slap left ball
+If tails -> slap right ball
+
+Stroke at 60 bpm for 120 seconds 
 
 #### 3
 
+Ramp
+
 ##### Base
 
+The faster you stroke the lighter the grip
+The slower you stroke the thighter the grip
+
+Start at 30 bpm stop at 180
+30 bpm 20 sec
+60 bpm 20 sec
+90 bpm 20 sec
+120 bpm 20 sec
+150 bpm 20 sec
+180 bpm 20 sec
+
 ##### CBT
+
+The faster you stroke the lighter the slap
+The slower you stroke the harder the slap
+
+Start at 30 bpm stop at 180
+30 bpm 20 sec
+60 bpm 20 sec
+90 bpm 20 sec
+120 bpm 20 sec
+150 bpm 20 sec
+180 bpm 20 sec
 
 #### 4
 
+Red Light Green Light
+
 ##### Base
+
+stroke only head at 60 bpm for 15 seconds
+wait for 5 seconds
+
+stroke only head at 90 bpm for 13 seconds
+wait for 7 seconds
+
+stroke only shaft at 90 bpm for 10 seconds
+wait for 10 seconds
+
+stroke whole length at 120 bpm for 14 seconds
+wait for 6 seconds
+
+stroke only shaft at 90 bpm for 17 seconds
+wait for 3 seconds
+
+stroke whole length at 60 bpm for 20 seconds
 
 ##### CBT
 
+slap left ball at 60 bpm for 15 seconds
+wait for 5 seconds
+
+slap left ball at 90 bpm for 13 seconds
+wait for 7 seconds
+
+slap right ball at 90 bpm for 10 seconds
+wait for 10 seconds
+
+slap both balls at 120 bpm for 14 seconds
+wait for 6 seconds
+
+slap right ball at 90 bpm for 17 seconds
+wait for 3 seconds
+
+slap both balls at 60 bpm for 20 seconds
+
 #### 5
 
+Roulette
+
 ##### Base
+
+DO x, y TIMES AT z BPM
+
+x:
+- stroke normal
+- stroke reverse hand
+- stroke light grip
+- stroke shaft tight grip
+- rub frenulum
+- palm head
+
+y:
+- 80
+- 90
+- 100
+- 110
+- 120
+- 130
+
+z:
+- 30 bpm
+- 60 bpm
+- 90 bpm
+- 120 bpm
+- 150 bpm
+- 180 bpm
 
 ##### CBT
 
 #### 6
 
+Dice Modifier
+
 ##### Base
 
+stroke at 90 bpm for 120 seconds
+
+roll dice modify bpm:
+1 - * 30 
+2 - * 60
+3 - * 90
+4 - * 120
+5 - * 150
+6 - * 180
+
 ##### CBT
+
+slap at 90 bpm for 120 seconds
+
+roll dice modify bpm:
+1 - * 30 
+2 - * 60
+3 - * 90
+4 - * 120
+5 - * 150
+6 - * 180
 
 #### 7
 
