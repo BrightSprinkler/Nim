@@ -373,8 +373,7 @@
                 {
                   "say": {
                     "label": "<p><span style=\"color: #ffee58\"><u><strong>Enter/Click To Continue</strong></u></span></p>",
-                    "mode": "autoplay",
-                    "allowSkip": true
+                    "mode": "pause"
                   }
                 },
                 {
@@ -638,7 +637,7 @@
       },
       {
         "say": {
-          "label": "<p>By default the match count is 15 (~12 Minutes).</p>",
+          "label": "<p>By default the match count is 15 (~7 Minutes per game, varies by AI-difficulty).</p>",
           "mode": "instant"
         }
       },
@@ -656,7 +655,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Normal (15 Matches)",
+                    "label": "Short (15 Matches)",
                     "commands": [
                       {
                         "audio.play": {
@@ -770,7 +769,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Normal (15 Matches)",
+                    "label": "Short (15 Matches)",
                     "commands": [
                       {
                         "audio.play": {
@@ -884,7 +883,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Normal (15 Matches)",
+                    "label": "Short (15 Matches)",
                     "commands": [
                       {
                         "audio.play": {
@@ -4167,8 +4166,40 @@
               "label": "RateP",
               "commands": [
                 {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
                   "goto": {
                     "target": "rate"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Source =�",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "source"
                   }
                 }
               ]
@@ -7232,7 +7263,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7282,7 +7313,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7353,7 +7384,7 @@
       },
       {
         "timer": {
-          "duration": "45s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7403,7 +7434,7 @@
       },
       {
         "timer": {
-          "duration": "45s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7460,7 +7491,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7510,7 +7541,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7560,7 +7591,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7610,7 +7641,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7660,7 +7691,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7710,7 +7741,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7760,7 +7791,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7804,7 +7835,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -7849,7 +7880,7 @@
       },
       {
         "timer": {
-          "duration": "45s-90s",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -7936,7 +7967,7 @@
       },
       {
         "timer": {
-          "duration": "45s-2m",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -7986,7 +8017,7 @@
       },
       {
         "timer": {
-          "duration": "45s-90s",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -8073,7 +8104,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -8123,7 +8154,7 @@
       },
       {
         "timer": {
-          "duration": "45s-1m30s",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -8247,7 +8278,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -8297,7 +8328,7 @@
       },
       {
         "timer": {
-          "duration": "45s-90s",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -8421,7 +8452,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -8471,7 +8502,7 @@
       },
       {
         "timer": {
-          "duration": "45s-1m30s",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -8595,7 +8626,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -8645,7 +8676,7 @@
       },
       {
         "timer": {
-          "duration": "30s-60s",
+          "duration": "30s",
           "style": "secret"
         }
       },
@@ -8800,7 +8831,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -8845,7 +8876,7 @@
       },
       {
         "timer": {
-          "duration": "30s-1m",
+          "duration": "30s",
           "style": "secret"
         }
       },
@@ -9006,7 +9037,7 @@
       },
       {
         "timer": {
-          "duration": "45s-2m",
+          "duration": "45s",
           "style": "secret"
         }
       },
@@ -9056,7 +9087,7 @@
       },
       {
         "timer": {
-          "duration": "30s-1m",
+          "duration": "30s",
           "style": "secret"
         }
       },
@@ -9217,7 +9248,7 @@
       },
       {
         "timer": {
-          "duration": "60s-2m",
+          "duration": "60s",
           "style": "secret"
         }
       },
@@ -9257,6 +9288,48 @@
               }
             }
           ]
+        }
+      },
+      {
+        "choice": {
+          "options": [
+            {
+              "label": "Back To Menu",
+              "commands": [
+                {
+                  "audio.play": {
+                    "locator": "file:menu-button-click.mp3"
+                  }
+                },
+                {
+                  "timer": {
+                    "duration": "0.1s",
+                    "style": "hidden"
+                  }
+                },
+                {
+                  "goto": {
+                    "target": "menu"
+                  }
+                }
+              ],
+              "color": "#1b5e20"
+            }
+          ]
+        }
+      }
+    ],
+    "source": [
+      {
+        "say": {
+          "label": "<p>The source code and used resources can be found here:</p><p><span style=\"color: #1e88e5\"><u>https://github.com/BrightSprinkler/Nim</u></span></p>",
+          "mode": "instant"
+        }
+      },
+      {
+        "say": {
+          "label": "<p>As always feel free to use this tease as a base for your own ideas.</p>",
+          "mode": "instant"
         }
       },
       {
@@ -11031,4 +11104,4 @@
       }
     ]
   }
-}
+} 
