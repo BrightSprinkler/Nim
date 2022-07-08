@@ -10,7 +10,7 @@
         "choice": {
           "options": [
             {
-              "label": "Game Length �",
+              "label": "Game Length ⏰",
               "commands": [
                 {
                   "audio.play": {
@@ -31,7 +31,7 @@
               ]
             },
             {
-              "label": "Difficulty <�",
+              "label": "Difficulty 🎚",
               "commands": [
                 {
                   "audio.play": {
@@ -52,7 +52,7 @@
               ]
             },
             {
-              "label": "Orgasm Chance =�",
+              "label": "Orgasm Chance 💦",
               "commands": [
                 {
                   "audio.play": {
@@ -73,7 +73,7 @@
               ]
             },
             {
-              "label": "Hentai =o",
+              "label": "Hentai 👯",
               "commands": [
                 {
                   "audio.play": {
@@ -94,7 +94,7 @@
               ]
             },
             {
-              "label": "CBT =�",
+              "label": "CBT 💢",
               "commands": [
                 {
                   "audio.play": {
@@ -115,7 +115,7 @@
               ]
             },
             {
-              "label": "CBT Chance =�",
+              "label": "CBT Chance 💥",
               "commands": [
                 {
                   "audio.play": {
@@ -136,7 +136,7 @@
               ]
             },
             {
-              "label": "Auto Play =",
+              "label": "Auto Play 🔁",
               "commands": [
                 {
                   "audio.play": {
@@ -232,7 +232,7 @@
       },
       {
         "say": {
-          "label": "<p>Names, characters, businesses, places, events and incidents are either the products of the authors imagination or used in a fictitious manner.</p>",
+          "label": "<p>Names, characters, businesses, places, events and incidents are either the products of the author’s imagination or used in a fictitious manner.</p>",
           "mode": "autoplay",
           "allowSkip": true
         }
@@ -336,7 +336,7 @@
         "choice": {
           "options": [
             {
-              "label": "Yes ",
+              "label": "Yes ✔",
               "commands": [
                 {
                   "audio.play": {
@@ -351,7 +351,7 @@
               ]
             },
             {
-              "label": "No L",
+              "label": "No ❌",
               "commands": [
                 {
                   "audio.play": {
@@ -1030,7 +1030,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled ",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1057,7 +1057,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled L",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -1118,7 +1118,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled ",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1144,7 +1144,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled L",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -1267,7 +1267,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled ",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1294,7 +1294,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled L",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -1355,7 +1355,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled ",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -1381,7 +1381,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled L",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -2892,7 +2892,7 @@
       },
       {
         "say": {
-          "label": "<p>Enabling auto play replaces some of the players manual decisions with automatic AI decisions.</p><p>Replaced/Automated decisions are for example:</p><p>� Taking matches</p><p>� Predicting dice rolls</p><p>� Predicting coin flips</p><p>This enables the tease to be played more &quot;hands free&quot;.</p>",
+          "label": "<p>Enabling auto play replaces some of the players manual decisions with automatic AI decisions.</p><p>Replaced/Automated decisions are for example:</p><p>⋅ Taking matches</p><p>⋅ Predicting dice rolls</p><p>⋅ Predicting coin flips</p><p>This enables the tease to be played more &quot;hands free&quot;.</p>",
           "mode": "instant"
         }
       },
@@ -2904,7 +2904,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled ",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -2930,7 +2930,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Disabled L",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -2955,7 +2955,7 @@
                     ]
                   },
                   {
-                    "label": "Auto Play Difficulty <�",
+                    "label": "Auto Play Difficulty 🎚",
                     "commands": [
                       {
                         "audio.play": {
@@ -3010,7 +3010,7 @@
               "choice": {
                 "options": [
                   {
-                    "label": "Enabled ",
+                    "label": "Enabled ✔",
                     "commands": [
                       {
                         "audio.play": {
@@ -3035,7 +3035,7 @@
                     ]
                   },
                   {
-                    "label": "Disabled L",
+                    "label": "Disabled ❌",
                     "commands": [
                       {
                         "audio.play": {
@@ -3061,7 +3061,7 @@
                     "color": "#01579b"
                   },
                   {
-                    "label": "Auto Play Difficulty <�",
+                    "label": "Auto Play Difficulty 🎚",
                     "commands": [
                       {
                         "audio.play": {
@@ -4078,7 +4078,7 @@
         "choice": {
           "options": [
             {
-              "label": "Start � ",
+              "label": "Start ▶ ",
               "commands": [
                 {
                   "audio.play": {
@@ -4100,7 +4100,7 @@
               "color": "#ff5722"
             },
             {
-              "label": "Settings ='",
+              "label": "Settings 🔧",
               "commands": [
                 {
                   "audio.play": {
@@ -4121,7 +4121,7 @@
               ]
             },
             {
-              "label": "Required Items =�",
+              "label": "Required Items 📦",
               "commands": [
                 {
                   "audio.play": {
@@ -4142,7 +4142,7 @@
               ]
             },
             {
-              "label": "Disclaimer W",
+              "label": "Disclaimer ❗",
               "commands": [
                 {
                   "audio.play": {
@@ -4163,7 +4163,7 @@
               ]
             },
             {
-              "label": "RateP",
+              "label": "Rate⭐",
               "commands": [
                 {
                   "audio.play": {
@@ -4184,7 +4184,7 @@
               ]
             },
             {
-              "label": "Source =�",
+              "label": "Source 📝",
               "commands": [
                 {
                   "audio.play": {
@@ -4288,7 +4288,7 @@
     "performTurn": [
       {
         "say": {
-          "label": "<p>Remaining Matches: <eval>game.currentMatches</eval></p><p><eval>utils.padEnd(&quot;&quot;, &quot;=�&quot;, game.currentMatches)</eval></p>",
+          "label": "<p>Remaining Matches: <eval>game.currentMatches</eval></p><p><eval>utils.padEnd(&quot;&quot;, &quot;📍&quot;, game.currentMatches)</eval></p>",
           "mode": "instant"
         }
       },
@@ -4318,7 +4318,7 @@
                     "choice": {
                       "options": [
                         {
-                          "label": "Take<br><br><span>&nbsp;&nbsp; =� &nbsp;&nbsp;<span>",
+                          "label": "Take<br><br><span>&nbsp;&nbsp; 📍 &nbsp;&nbsp;<span>",
                           "commands": [
                             {
                               "eval": {
@@ -4340,7 +4340,7 @@
                           "visible": "$game.currentMatches >= 1"
                         },
                         {
-                          "label": "Take<br><br><span>=� &nbsp; =�<span>",
+                          "label": "Take<br><br><span>📍 &nbsp; 📍<span>",
                           "commands": [
                             {
                               "eval": {
@@ -4362,7 +4362,7 @@
                           "visible": "$game.currentMatches >= 2"
                         },
                         {
-                          "label": "Take<br><br>=�=�=�",
+                          "label": "Take<br><br>📍📍📍",
                           "commands": [
                             {
                               "eval": {
@@ -5307,7 +5307,7 @@
                     "choice": {
                       "options": [
                         {
-                          "label": "Yes ",
+                          "label": "Yes ✔",
                           "commands": [
                             {
                               "audio.play": {
@@ -5332,7 +5332,7 @@
                           ]
                         },
                         {
-                          "label": "No L",
+                          "label": "No ❌",
                           "commands": [
                             {
                               "audio.play": {
@@ -5433,7 +5433,7 @@
                     "choice": {
                       "options": [
                         {
-                          "label": "Yes ",
+                          "label": "Yes ✔",
                           "commands": [
                             {
                               "audio.play": {
@@ -5458,7 +5458,7 @@
                           ]
                         },
                         {
-                          "label": "No L",
+                          "label": "No ❌",
                           "commands": [
                             {
                               "audio.play": {
@@ -5961,7 +5961,7 @@
         "choice": {
           "options": [
             {
-              "label": "Yes ",
+              "label": "Yes ✔",
               "commands": [
                 {
                   "audio.play": {
@@ -6073,7 +6073,7 @@
               ]
             },
             {
-              "label": "No L",
+              "label": "No ❌",
               "commands": [
                 {
                   "audio.play": {
@@ -6142,7 +6142,7 @@
         "choice": {
           "options": [
             {
-              "label": "Yes ",
+              "label": "Yes ✔",
               "commands": [
                 {
                   "audio.play": {
@@ -6167,7 +6167,7 @@
               ]
             },
             {
-              "label": "No L",
+              "label": "No ❌",
               "commands": [
                 {
                   "audio.play": {
@@ -11104,4 +11104,4 @@
       }
     ]
   }
-} 
+}
